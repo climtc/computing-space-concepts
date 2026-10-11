@@ -14,6 +14,13 @@
 - `index.html` 표지와 차례
 - 장별 페이지: `preface.html`, `chapter-01.html` … `chapter-10.html`, `conclusion.html`, `appendix-1.html`, `appendix-2.html`
 - `full.html` 한 페이지로 읽기
-- `manuscript.md` 원고 Markdown
+
+## 원고 열람 안내
+
+원고는 비정기적으로 갱신됩니다. 이 사이트에서 최신 내용을 읽어 주세요.
+
+- 원고는 장별 페이지 또는 웹의 한 페이지 읽기로 열람합니다.
+- 원고 전체 다운로드 파일은 제공하지 않습니다.
+- 표지의 구성 안내는 공개된 장, 서문, 결, 부록과 그림으로 연결됩니다.
 
 원고의 저작권은 저자에게 있습니다.
