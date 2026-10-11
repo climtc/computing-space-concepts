@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; frame-src https://climtc.github.io; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>1장. 담는 공간 — 계산하는 공간 : 개념편</title>
+<meta name="description" content="이 책은 하나의 오래된 물음에서 출발합니다. 공간과 그 안에 있는 것은 어떤 관계인가. 공간은 사물들이 놓이기 전부터 거기 있는 그릇인가, 아니면 사물들 사이의 관계에서 생겨나는 것인가. 그리고 공간 안에 무엇이 놓이느냐에 따라 공간 자체가 달라지는가.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%231f5147'/%3E%3Ctext x='20' y='29' text-anchor='middle' font-size='28' fill='white'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/book.css">
+<script src="assets/book.js" defer></script>
+</head>
+<body class="book-reading">
+<a class="skip" href="#reading-main">본문으로 건너뛰기</a>
+<header class="site-header"><div class="shell header-inner">
+<a class="brand" href="https://climtc.github.io/"><span class="brand-mark" aria-hidden="true">R<span>·</span></span><span>임완철<small>RESEARCH NOTES</small></span></a>
+<nav aria-label="주요 메뉴"><a href="https://climtc.github.io/#projects">연구 기록 <span aria-hidden="true">↗</span></a><a href="index.html#contents">차례</a><a href="full.html">한 페이지로 읽기</a></nav>
+</div></header>
+<main class="shell reading" id="reading-main">
+<div class="guide-layout">
+<aside class="toc-sidebar" id="book-toc"><details class="toc-mobile" open><summary>차례</summary>
+<a class="toc-home" href="index.html">계산하는 공간 : 개념편</a>
+<nav aria-label="원고 차례"><ol class="toc-list">
+<li><details class="toc-group"><summary><span class="toc-label">서</span><span class="toc-title">공간이 계산한다면</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="preface.html">장 처음으로 →</a><ol>
+<li><a href="preface.html#s-1" data-sec="s-1">이 책이 걷는 길</a></li>
+<li><a href="preface.html#s-2" data-sec="s-2">앞선 책들에서 가져온 것</a></li>
+<li><a href="preface.html#s-3" data-sec="s-3">공교육 실뜨기</a></li>
+<li><a href="preface.html#s-4" data-sec="s-4">이 책이 지키는 네 가지 구별</a></li>
+</ol></details></li>
+<li class="toc-part" aria-hidden="true">1부 · 담는 공간, 관계하는 공간, 계산하는 공간</li>
+<li><details class="toc-group" open><summary class="is-current"><span class="toc-label">1장</span><span class="toc-title">담는 공간</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-01.html" aria-current="page">장 처음으로 →</a><ol>
+<li><a href="#s-1" data-sec="s-1">뉴턴의 절대공간</a></li>
+<li><a href="#s-2" data-sec="s-2">라이프니츠의 반론</a></li>
+<li><a href="#s-3" data-sec="s-3">칸트의 형식</a></li>
+<li><a href="#s-4" data-sec="s-4">담는 공간이 가능하게 한 것</a></li>
+<li><a href="#s-5" data-sec="s-5">담는 개념공간</a></li>
+<li><a href="#s-6" data-sec="s-6">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">2장</span><span class="toc-title">관계하는 공간</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-02.html">장 처음으로 →</a><ol>
+<li><a href="chapter-02.html#s-1" data-sec="s-1">안에서 휘어짐을 아는 법</a></li>
+<li><a href="chapter-02.html#s-2" data-sec="s-2">리만 — 공간의 측도는 경험의 문제다</a></li>
+<li><a href="chapter-02.html#s-3" data-sec="s-3">민코프스키 — 공간과 시간의 결합</a></li>
+<li><a href="chapter-02.html#s-4" data-sec="s-4">아인슈타인 — 서로를 정하는 공간과 물질</a></li>
+<li><a href="chapter-02.html#s-5" data-sec="s-5">안에서 보는 은하</a></li>
+<li><a href="chapter-02.html#s-6" data-sec="s-6">관계하는 개념공간</a></li>
+<li><a href="chapter-02.html#s-7" data-sec="s-7">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">3장</span><span class="toc-title">계산하는 공간</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-03.html">장 처음으로 →</a><ol>
+<li><a href="chapter-03.html#s-1" data-sec="s-1">&#x27;공간이 계산한다&#x27;는 말의 약정</a></li>
+<li><a href="chapter-03.html#s-2" data-sec="s-2">언어가 계산 가능해진다는 것</a></li>
+<li><a href="chapter-03.html#s-3" data-sec="s-3">트랜스포머 안에서 일어나는 일</a></li>
+<li><a href="chapter-03.html#s-4" data-sec="s-4">같은 토큰, 다른 자리</a></li>
+<li><a href="chapter-03.html#s-5" data-sec="s-5">세 공간을 나란히 놓으면</a></li>
+<li><a href="chapter-03.html#s-6" data-sec="s-6">2025년의 &#x27;연속과 불연속&#x27; 다시 읽기</a></li>
+<li><a href="chapter-03.html#s-7" data-sec="s-7">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li class="toc-part" aria-hidden="true">2부 · 개념공간</li>
+<li><details class="toc-group"><summary><span class="toc-label">4장</span><span class="toc-title">축이 의미를 정하는 공간</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-04.html">장 처음으로 →</a><ol>
+<li><a href="chapter-04.html#s-1" data-sec="s-1">개념공간이란 무엇인가</a></li>
+<li><a href="chapter-04.html#s-2" data-sec="s-2">네 가지 개념공간</a></li>
+<li><a href="chapter-04.html#s-3" data-sec="s-3">모든 개념이 차원으로 표현되는가</a></li>
+<li><a href="chapter-04.html#s-4" data-sec="s-4">&#x27;차원&#x27;의 세 가지 쓰임</a></li>
+<li><a href="chapter-04.html#s-5" data-sec="s-5">관점이 축이 되는 조건</a></li>
+<li><a href="chapter-04.html#s-6" data-sec="s-6">축이 기저가 되는 조건</a></li>
+<li><a href="chapter-04.html#s-7" data-sec="s-7">축이 아닌 관계: 고리 셋</a></li>
+<li><a href="chapter-04.html#s-8" data-sec="s-8">개념공간의 네 층위</a></li>
+<li><a href="chapter-04.html#s-9" data-sec="s-9">차원을 더할 때와 뺄 때</a></li>
+<li><a href="chapter-04.html#s-10" data-sec="s-10">같은 낱말의 다른 뜻 — 곡률, 구경꾼, 위상</a></li>
+<li><a href="chapter-04.html#s-11" data-sec="s-11">다시 정의한 관점들</a></li>
+<li><a href="chapter-04.html#s-12" data-sec="s-12">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">5장</span><span class="toc-title">축이 계산될 때</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-05.html">장 처음으로 →</a><ol>
+<li><a href="chapter-05.html#s-1" data-sec="s-1">축이 계산의 대상이 될 때</a></li>
+<li><a href="chapter-05.html#s-2" data-sec="s-2">축이 계산의 재료가 될 때</a></li>
+<li><a href="chapter-05.html#s-3" data-sec="s-3">축이 변수가 될 때 — 계산하는 개념공간</a></li>
+<li><a href="chapter-05.html#s-4" data-sec="s-4">세 경우를 나란히 놓으면</a></li>
+<li><a href="chapter-05.html#s-5" data-sec="s-5">&#x27;기하학적 틀&#x27;은 고정된 무대인가</a></li>
+<li><a href="chapter-05.html#s-6" data-sec="s-6">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">6장</span><span class="toc-title">공교육이라는 낱말의 여러 겹 — 공교육 실뜨기</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-06.html">장 처음으로 →</a><ol>
+<li><a href="chapter-06.html#s-1" data-sec="s-1">같은 낱말, 다른 강조</a></li>
+<li><a href="chapter-06.html#s-2" data-sec="s-2">의미의 여러 겹을 펼쳐 보이는 공간</a></li>
+<li><a href="chapter-06.html#s-3" data-sec="s-3">계산하는 개념공간을 건넨다는 것</a></li>
+<li><a href="chapter-06.html#s-4" data-sec="s-4">열네 단계의 길</a></li>
+<li><a href="chapter-06.html#s-5" data-sec="s-5">차원이 된 열네 개념</a></li>
+<li><a href="chapter-06.html#s-6" data-sec="s-6">네 대상을 장치의 자리에 넣어 보기</a></li>
+<li><a href="chapter-06.html#s-7" data-sec="s-7">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">7장</span><span class="toc-title">언어모델에게 개념공간을 계산시켰을 때</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-07.html">장 처음으로 →</a><ol>
+<li><a href="chapter-07.html#s-1" data-sec="s-1">열네 단계를 다시 따라가기</a></li>
+<li><a href="chapter-07.html#s-2" data-sec="s-2">네 개의 사례는 서로 다른 답을 냈는가</a></li>
+<li><a href="chapter-07.html#s-3" data-sec="s-3">선언과 기록</a></li>
+<li><a href="chapter-07.html#s-4" data-sec="s-4">정합적인 문장은 무엇의 증거인가</a></li>
+<li><a href="chapter-07.html#s-5" data-sec="s-5">설계된 공간과 학습된 공간 사이</a></li>
+<li><a href="chapter-07.html#s-6" data-sec="s-6">측정할 수 있는 질문으로 바꾸기</a></li>
+<li><a href="chapter-07.html#s-7" data-sec="s-7">고쳐 쓴 읽기 하나 — 종이 교과서</a></li>
+<li><a href="chapter-07.html#s-8" data-sec="s-8">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li class="toc-part" aria-hidden="true">3부 · 계산하는 개념공간으로 생각하기</li>
+<li><details class="toc-group"><summary><span class="toc-label">8장</span><span class="toc-title">접고 펼치는 조작과 매체</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-08.html">장 처음으로 →</a><ol>
+<li><a href="chapter-08.html#s-1" data-sec="s-1">투영과 단면</a></li>
+<li><a href="chapter-08.html#s-2" data-sec="s-2">축의 추가와 제거</a></li>
+<li><a href="chapter-08.html#s-3" data-sec="s-3">단위의 분해와 재종합</a></li>
+<li><a href="chapter-08.html#s-4" data-sec="s-4">시점의 이동</a></li>
+<li><a href="chapter-08.html#s-5" data-sec="s-5">시간의 펼침</a></li>
+<li><a href="chapter-08.html#s-6" data-sec="s-6">다섯 조작이 실패하는 곳</a></li>
+<li><a href="chapter-08.html#s-7" data-sec="s-7">공교육으로 돌아오기</a></li>
+<li><a href="chapter-08.html#s-8" data-sec="s-8">종이는 무엇을 접는가</a></li>
+<li><a href="chapter-08.html#s-9" data-sec="s-9">무엇을 비교해야 하는가</a></li>
+<li><a href="chapter-08.html#s-10" data-sec="s-10">정보를 같게 맞춘다는 것 — 사례 셋</a></li>
+<li><a href="chapter-08.html#s-11" data-sec="s-11">도식은 누구의 시선인가</a></li>
+<li><a href="chapter-08.html#s-12" data-sec="s-12">고차원을 정직하게 말하는 법</a></li>
+<li><a href="chapter-08.html#s-13" data-sec="s-13">비교를 위한 설계</a></li>
+<li><a href="chapter-08.html#s-14" data-sec="s-14">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">9장</span><span class="toc-title">계산되지 않는 것과 거리</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-09.html">장 처음으로 →</a><ol>
+<li><a href="chapter-09.html#s-1" data-sec="s-1">구경꾼에서 생존자로 — 유비의 무게</a></li>
+<li><a href="chapter-09.html#s-2" data-sec="s-2">언덕 위의 구경꾼</a></li>
+<li><a href="chapter-09.html#s-3" data-sec="s-3">어긋남의 네 가지 출처</a></li>
+<li><a href="chapter-09.html#s-4" data-sec="s-4">교실 창문 앞에서</a></li>
+<li><a href="chapter-09.html#s-5" data-sec="s-5">도구가 다시 대상이 될 때</a></li>
+<li><a href="chapter-09.html#s-6" data-sec="s-6">일곱 개의 자리</a></li>
+<li><a href="chapter-09.html#s-7" data-sec="s-7">손으로 돌리는 일은 계산을 바꾼다</a></li>
+<li><a href="chapter-09.html#s-8" data-sec="s-8">&#x27;외골격&#x27; 은유를 내려놓는 이유</a></li>
+<li><a href="chapter-09.html#s-9" data-sec="s-9">끊는 자리, 기록하는 자리</a></li>
+<li><a href="chapter-09.html#s-10" data-sec="s-10">책임은 어디에 남는가</a></li>
+<li><a href="chapter-09.html#s-11" data-sec="s-11">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">10장</span><span class="toc-title">교실 밖에서, 그리고 실행</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-10.html">장 처음으로 →</a><ol>
+<li><a href="chapter-10.html#s-1" data-sec="s-1">과학의 모형 — 상태공간은 공간이 아니다</a></li>
+<li><a href="chapter-10.html#s-2" data-sec="s-2">역사의 인식 — 묶는 규칙과 갈라지는 계통</a></li>
+<li><a href="chapter-10.html#s-3" data-sec="s-3">디자인과 건축 — 기하는 시험할 수 있다, 행동은 아니다</a></li>
+<li><a href="chapter-10.html#s-4" data-sec="s-4">인문사회 이론 — 관점의 배열로 남을 권리</a></li>
+<li><a href="chapter-10.html#s-5" data-sec="s-5">연구 글쓰기 — 근거 지도라는 개념공간</a></li>
+<li><a href="chapter-10.html#s-6" data-sec="s-6">계산이 판단을 대신하지 못하는 곳</a></li>
+<li><a href="chapter-10.html#s-7" data-sec="s-7">실행에는 층이 있다</a></li>
+<li><a href="chapter-10.html#s-8" data-sec="s-8">초고의 예를 다시 보기</a></li>
+<li><a href="chapter-10.html#s-9" data-sec="s-9">적용을 위한 실행의 조건</a></li>
+<li><a href="chapter-10.html#s-10" data-sec="s-10">이름에 대하여</a></li>
+<li><a href="chapter-10.html#s-11" data-sec="s-11">포스트언어라는 전망에 대하여</a></li>
+<li><a href="chapter-10.html#s-12" data-sec="s-12">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">결</span><span class="toc-title">계산하는 개념공간</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="conclusion.html">장 처음으로 →</a><ol>
+<li><a href="conclusion.html#s-1" data-sec="s-1">확인한 것</a></li>
+<li><a href="conclusion.html#s-2" data-sec="s-2">가정한 것</a></li>
+<li><a href="conclusion.html#s-3" data-sec="s-3">제안한 것</a></li>
+<li><a href="conclusion.html#s-4" data-sec="s-4">아직 하지 않은 것</a></li>
+<li><a href="conclusion.html#s-5" data-sec="s-5">새로운 사유의 단위라는 말에 대하여</a></li>
+<li><a href="conclusion.html#s-6" data-sec="s-6">접힌 문장으로 돌아가며</a></li>
+</ol></details></li>
+<li class="toc-part" aria-hidden="true">부록</li>
+<li><details class="toc-group"><summary><span class="toc-label">부록 1</span><span class="toc-title">사례 읽기 안내</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="appendix-1.html">장 처음으로 →</a><ol>
+<li><a href="appendix-1.html#s-1" data-sec="s-1">네트워크가 없을 때</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">부록 2</span><span class="toc-title">공교육 실뜨기의 입력 기록</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="appendix-2.html">장 처음으로 →</a><ol>
+<li><a href="appendix-2.html#s-1" data-sec="s-1">관점을 하나씩 더한 열네 단계</a></li>
+<li><a href="appendix-2.html#s-2" data-sec="s-2">관점마다 따로 요청한 정의</a></li>
+<li><a href="appendix-2.html#s-3" data-sec="s-3">네 대상을 장치 자리에 넣은 분석</a></li>
+<li><a href="appendix-2.html#s-4" data-sec="s-4">이 기록에 없는 것</a></li>
+</ol></details></li>
+</ol></nav>
+</details></aside>
+<article class="chapter" id="chapter-01">
+<header class="chapter-head"><p class="eyebrow">1부 · 1장</p><h1>담는 공간</h1></header>
+<p>이 책은 하나의 오래된 물음에서 출발합니다. 공간과 그 안에 있는 것은 어떤 관계인가. 공간은 사물들이 놓이기 전부터 거기 있는 그릇인가, 아니면 사물들 사이의 관계에서 생겨나는 것인가. 그리고 공간 안에 무엇이 놓이느냐에 따라 공간 자체가 달라지는가.</p>
+<p>이 물음은 물리학과 철학의 물음이지만, 이 책에서는 개념의 물음으로 이어집니다. 개념을 공간의 한 점이나 한 영역으로 생각할 때, 그 공간은 개념들이 놓이기 전부터 정해져 있는가, 아니면 개념들의 배치와 함께 정해지는가. 이 장은 첫 번째 그림, 곧 <strong>공간과 그 안의 것이 서로를 바꾸지 않는 그림</strong>을 다룹니다. 이 책은 그것을 '담는 공간'이라고 부릅니다.</p>
+<h2 id="s-1">1. 뉴턴의 절대공간</h2>
+<p>17세기 말 뉴턴은 『프린키피아』의 정의들 뒤에 붙인 주해에서 시간과 공간을 두 가지로 나누었습니다. 우리가 재는 상대적이고 겉보기의 시간과 공간, 그리고 그 밑에 있는 절대적이고 참되고 수학적인 시간과 공간입니다. 절대시간은 바깥의 어떤 것과도 관계없이 스스로 균일하게 흐릅니다. 절대공간은 바깥의 어떤 것과도 관계없이 늘 같고 움직이지 않습니다.<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
+<p>이 그림에서 공간은 사물들이 놓이기 전부터 거기 있고, 사물이 모두 사라져도 거기 남습니다. 사물들은 그 공간 안에서 자리를 바꾸지만, 공간은 사물들 때문에 바뀌지 않습니다. 이 책에 연결된 '뉴턴의 중력 — 공식에서 궤도로' 사례가 그리는 세계가 그렇습니다. 고정된 중심 천체 둘레를 작은 천체가 타원을 그리며 돌고, 그 운동이 놓인 배경의 좌표는 처음부터 끝까지 그대로입니다. 궤도는 공간 안에서 그려지고, 공간은 궤도에 영향을 받지 않습니다.</p>
+<figure class="ifig" id="fig-1-1"><figcaption class="ifig-bar"><span class="ifig-no">그림 1-1</span><span class="ifig-title">뉴턴의 중력 — 공식에서 궤도로</span></figcaption><div class="ifig-frame"><iframe id="fig-1-1-frame" src="https://climtc.github.io/teaching-learning-perspectives/models/newton-orbits.html" title="그림 1-1 뉴턴의 중력 — 공식에서 궤도로 조작 모형" loading="lazy" allow="fullscreen" referrerpolicy="no-referrer" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"></iframe></div><div class="ifig-act"><button type="button" class="ifig-fs" data-target="fig-1-1-frame" data-fallback="https://climtc.github.io/teaching-learning-perspectives/models/newton-orbits.html">전체 화면</button><a href="https://climtc.github.io/teaching-learning-perspectives/models/newton-orbits.html" target="_blank" rel="noopener">모형 크게 열기<span class="sr-only"> (새 창)</span></a><a href="https://climtc.github.io/teaching-learning-perspectives/newton-orbits.html" target="_blank" rel="noopener">해설과 출처 보기<span class="sr-only"> (새 창)</span></a></div><div class="ifig-cap"><p>긴반지름과 이심률과 궤도면의 기울기를 바꾸고, 재생을 눌러 한 주기를 따라가 보세요. 궤도의 모양은 바뀌어도 궤도가 그려지는 배경의 좌표는 처음부터 끝까지 그대로입니다. 담는 공간의 모습입니다. 이 모형은 중심 천체를 고정하고 작은 천체 하나의 운동만 계산하며, 중심 천체의 반동과 다른 천체, 상대론의 효과는 넣지 않았습니다.</p><p class="ifig-url">조작 모형: https://climtc.github.io/teaching-learning-perspectives/models/newton-orbits.html<br>해설과 출처: https://climtc.github.io/teaching-learning-perspectives/newton-orbits.html</p></div></figure>
+<p>다만 뉴턴의 절대공간을 그저 '빈 그릇'으로만 읽는 것은 조금 부족합니다. 흔히 '물통 논증'으로 알려진 대목에서 뉴턴은 회전을 다룹니다. 물을 담은 통을 돌리면 물의 표면이 오목해지는데, 이 효과는 주변 사물과의 상대적 운동이 아니라 절대공간에 대한 회전에서 온다는 것입니다. 그러니 뉴턴의 공간은 물질의 운동에 작용합니다. 물질이 가속되고 있는지 아닌지를 정하는 기준이 되기 때문입니다. 그러나 물질은 공간에 작용하지 않습니다. 이 책이 '담는 공간'이라고 부르는 것은 정확히 이 비대칭입니다. <strong>공간은 그 안의 것에 작용하지만, 그 안의 것은 공간을 바꾸지 못한다.</strong></p>
+<h2 id="s-2">2. 라이프니츠의 반론</h2>
+<p>같은 시대에 이 그림에 반대한 사람이 있었습니다. 라이프니츠는 1715년부터 이듬해까지 뉴턴의 편에 선 클라크와 편지를 주고받으며, 공간을 시간처럼 순전히 상대적인 것, 곧 함께 존재하는 것들의 질서로 보아야 한다고 썼습니다. 실재하는 절대공간이라는 생각을 그는 몇몇 근대 영국인의 우상이라고까지 불렀습니다. 클라크는 공간이 존재가 아니라 무한하고 영원한 존재, 곧 신의 속성이라고 답했고, 공간이 공존하는 사물들의 질서일 뿐이라면 신이 물질세계 전체를 한 방향으로 옮기거나 갑자기 멈추게 해도 아무 차이가 없을 것이라고 반박했습니다.<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup></p>
+<p>이 논쟁은 이 책의 길이 하나의 직선이 아니라는 것을 일깨워 줍니다. 공간을 사물들 사이의 관계로 보는 생각은 17세기에도 이미 있었습니다. 다만 라이프니츠의 관계적 공간은 다음 장에서 볼 '관계하는 공간'과 같은 것이 아닙니다. 라이프니츠는 공간이 사물들의 관계에서 성립한다고 보았지만, 그 관계가 공간의 측도, 곧 길이를 재는 방식 자체를 사물에 따라 다르게 만든다고 보지는 않았습니다. 사물들의 관계가 공간의 <strong>모양</strong>을 바꾼다는 생각은 19세기를 기다려야 했습니다. 오히려 3장에서 보겠지만, '함께 존재하는 것들의 질서'라는 라이프니츠의 말은 계산하는 공간을 이해하는 실마리가 됩니다.</p>
+<h2 id="s-3">3. 칸트의 형식</h2>
+<p>18세기 후반, 이른바 비판기의 칸트는 이 논쟁에 다른 답을 내놓았습니다. 그는 『순수이성비판』의 첫 부분에서 공간과 시간이 무엇인지, 실재하는 존재인지, 사물들 사이의 관계인지, 아니면 우리의 직관의 형식에만 속하는 것인지를 묻습니다. 그리고 공간은 바깥의 경험에서 끌어낸 개념이 아니라, 모든 바깥 직관의 바탕에 놓이는 앞선 필연적 표상이라고 답합니다. 공간은 바깥 감각에 나타나는 모든 현상의 형식이라는 것입니다.<sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup></p>
+<p>칸트의 공간은 그릇이 아닙니다. 그는 공간을 실재하는 존재로 보는 뉴턴의 선택지와 사물들의 관계로 보는 라이프니츠의 선택지를 <strong>둘 다</strong> 물리쳤습니다. 공간은 사물 쪽에 있는 것이 아니라, 사물이 우리에게 주어지는 방식 쪽에 있습니다. 그런데 그렇게 보면, 이 책의 물음에 대해서는 뉴턴과 같은 답이 나옵니다. 공간이 우리 직관의 형식이라면, 그 형식 안에 무엇이 나타나든 그것이 형식을 바꾸지는 못합니다. 바깥의 무엇을 경험하든 우리는 그것을 같은 공간의 형식으로 경험합니다. 그러므로 비판기 칸트에게서도 공간과 그 안의 것은 서로를 정하지 않습니다. 공간은 먼저 있고, 그 안에 나타나는 것은 공간의 구조를 바꾸지 못합니다.</p>
+<p>흥미로운 것은 칸트 자신의 생각이 처음부터 그렇지 않았다는 점입니다. 1747년의 첫 저작에서 젊은 칸트는, 공간의 세 차원이 실체들이 서로에게 작용하는 힘의 법칙, 곧 힘이 거리의 제곱에 반비례한다는 법칙에서 나왔을 것이라고 추측했습니다.<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup> 공간의 성질을 그 안의 것들 사이의 힘이 정할지도 모른다는 생각입니다. 이 책의 2장이 다룰 생각을 한 세기 앞서 스치듯 말한 셈입니다. 이 책에 연결된 '가우스 법칙 — 닫힌 면과 전기장의 플럭스' 사례는 이 짝을 수학으로 보여 줍니다. 점전하에서 나오는 장의 세기가 거리의 제곱에 반비례하면, 전하를 둘러싼 구면을 지나는 전체 흐름은 구의 크기와 상관없이 같습니다. 3차원에서 구면의 넓이가 반지름의 제곱에 비례하기 때문입니다. 역제곱 법칙과 공간의 차원 수가 맞물려 있다는 것을 계산으로 확인할 수 있습니다. 물론 이 계산이 칸트의 추측을 증명하는 것은 아닙니다. 칸트는 그 뒤 1768년에는 오히려 절대공간 편에 서기도 했고, 비판기에는 앞에서 본 형식론으로 옮겨 갔습니다.</p>
+<h2 id="s-4">4. 담는 공간이 가능하게 한 것</h2>
+<p>공간이 먼저 있고 그 안의 것이 공간을 바꾸지 않는다는 그림은 많은 것을 가능하게 했습니다. 무엇보다 <strong>좌표</strong>를 가능하게 했습니다. 공간이 어디서나 같고 움직이지 않는다면, 그 위에 한 번 그린 격자는 어떤 사물이 놓이든 그대로 쓸 수 있습니다. 모든 위치는 같은 좌표계 위의 세 개의 수로 적을 수 있고, 두 위치 사이의 거리는 같은 공식으로 잴 수 있습니다. 측정이 측정되는 것과 상관없이 같은 방식으로 이루어진다는 믿음이 여기서 나옵니다.</p>
+<p>이 믿음은 물리 공간에만 머물지 않았습니다. 저는 『읽는다는 것의 미래』에서 19세기의 케틀레가 천문 관측의 계산법을 사회 현상에 옮겨 '평균인'을 만든 이야기를 다루었습니다. 평균과 정규분포 위에서 사람 한 명 한 명은 평균으로부터 얼마나 떨어져 있는지로 표상되는 하나의 점이 됩니다.<sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup> 이 좌표 공간은 담는 공간의 사회적 판본입니다. 축은 먼저 정해져 있고(키, 몸무게, 성적), 사람들은 그 축 위에 점으로 놓이며, 누가 그 공간에 놓이든 축은 바뀌지 않습니다. 학생 한 명을 '평균보다 1.5 표준편차 위'라고 말할 때, 그 학생은 이미 정해진 공간 안의 한 자리가 됩니다. 그 공간은 그 학생 때문에 달라지지 않습니다.</p>
+<h2 id="s-5">5. 담는 개념공간</h2>
+<p>개념을 생각할 때도 우리는 자주 담는 공간을 씁니다. 축을 먼저 정하고, 개념이나 현상을 그 축 위에 점으로 놓습니다. 이렇게 하면 서로 다른 것들을 같은 기준으로 비교할 수 있고, 같은 틀을 여러 대상에 되풀이해 쓸 수 있습니다.</p>
+<p>2025년 초고의 '11차원 개념공간'이 바로 이 그림이었습니다. 초고는 열한 개의 이론적 관점을 축으로 세우고, 어떤 시대의 어떤 학교를 그 축들 위의 좌표, 곧 '역사적 맥락의 좌표', '제도적 특징의 좌표', '권력 구조의 좌표'를 가진 하나의 벡터로 표상할 수 있다고 썼습니다. 축은 분석하기 전에 정해져 있고, 대상은 그 위에 놓이며, 대상이 무엇이든 축은 그대로입니다. 그리고 초고는 그 개념공간을 분석이 펼쳐지는 안정적인 '기하학적 무대'라고 불렀습니다. 5장에서 이 무대의 그림을 다시 따지겠지만, 2025년의 저는 언어모델이라는 계산하는 공간을 쓰면서도 개념공간은 담는 공간으로 생각하고 있었습니다.</p>
+<p>담는 개념공간이 감추는 것이 세 가지 있습니다.</p>
+<p>첫째, <strong>축이 어디서 왔는지</strong>를 감춥니다. 담는 공간에서 축은 늘 거기 있었던 것처럼 보입니다. 그러나 개념공간의 축은 누군가 골랐습니다. 공교육 실뜨기의 열네 관점은 제가 정한 순서로 하나씩 더해졌고(초고는 열한 개로 셌습니다. <a class="xref" href="chapter-06.html#s-4">6장 4절</a>), 그 순서와 선택에는 이유가 있었습니다. 축이 먼저 주어진 것처럼 보이면 그 선택은 보이지 않습니다.</p>
+<p>둘째, <strong>놓이는 것이 축을 바꿀 수 있다는 가능성</strong>을 감춥니다. 7장에서 2025년의 기록을 다시 읽으며 보겠지만, 관점 하나를 더할 때마다 앞의 관점들은 자리와 뜻을 바꾸었습니다. '체계'를 더하자 '공중'은 공교육을 감싸는 바깥에서 체계의 환경으로 옮겨 갔습니다. 담는 공간에서는 일어나지 않을 일입니다. 축들이 그 위에 놓인 것들과 서로를 정하고 있었던 것입니다.</p>
+<p>셋째, <strong>보는 사람의 자리</strong>를 감춥니다. 담는 공간을 그리는 사람은 공간 바깥에서 공간 전체를 내려다보는 것처럼 그립니다. 뉴턴의 절대공간이 그랬고, 좌표 위에 학생을 점으로 찍는 사람도 그렇습니다. 그런데 2장에서 보겠지만, 공간이 그 안의 것과 서로를 정한다면 공간의 모양을 미리 그려 둘 수 없고, 안에서 잰 것들로 짐작해야 합니다. 바깥에서 공간 전체를 내려다보는 자리는 그때 가장 먼저 의심받습니다.</p>
+<h2 id="s-6">6. 이 장의 제안과 가정</h2>
+<ul><li><strong>제안한 것</strong>: '담는 공간'이라는 이름과 그 정식(공간은 그 안의 것에 작용하지만 그 안의 것은 공간을 바꾸지 못한다). 이것은 이 책의 요약이며 뉴턴이나 칸트의 문장이 아니다. 뉴턴과 비판기 칸트를 서로 다른 이유로 같은 그림에 묶는 읽기, 케틀레의 좌표 공간을 담는 공간의 사회적 판본으로 보는 읽기, 2025년 초고의 개념공간을 담는 개념공간으로 보는 읽기와 그것이 감추는 세 가지.</li><li><strong>가정한 것</strong>: 가우스 법칙 사례는 점전하 하나와 빈 공간을 가정한 단순 모형이다.</li></ul>
+<section class="notes" aria-label="주"><h2 class="notes-title">주</h2><ol>
+<li id="fn-1" value="1">뉴턴 『프린키피아』(1687) 정의 뒤 주해. <a class="fnback" href="#ref-1" aria-label="본문으로 돌아가기">↩</a></li>
+<li id="fn-2" value="2">Leibniz, G. W., &amp; Clarke, S. (1715–1716). 서한. Gerhardt 편 <em>Die philosophischen Schriften</em> VII, 363쪽(라이프니츠 셋째 편지 §3–§4), 368쪽(클라크 셋째 답신 §3–§4). <a class="fnback" href="#ref-2" aria-label="본문으로 돌아가기">↩</a></li>
+<li id="fn-3" value="3">Kant, I. (1781/1787). <em>Kritik der reinen Vernunft</em>, 초월적 감성론. <a class="fnback" href="#ref-3" aria-label="본문으로 돌아가기">↩</a></li>
+<li id="fn-4" value="4">Kant, I. (1747). <em>Gedanken von der wahren Schätzung der lebendigen Kräfte</em>, §10. <a class="fnback" href="#ref-4" aria-label="본문으로 돌아가기">↩</a></li>
+<li id="fn-5" value="5">임완철(2019). 읽는다는 것의 미래. 지식노마드. 케틀레·평균인·정규분포 105–112쪽. <a class="fnback" href="#ref-5" aria-label="본문으로 돌아가기">↩</a></li>
+</ol></section>
+<nav class="chapter-nav" aria-label="이전·다음 장"><a class="prev" href="preface.html"><span>← 이전</span>서. 공간이 계산한다면</a><a class="next" href="chapter-02.html"><span>다음 →</span>2장. 관계하는 공간</a></nav>
+</article>
+</div>
+</main>
+<footer class="site-footer"><div class="shell">
+<p class="cowork">이 원고와 이 원고에 연결된 상호작용 사례들은 제가 코덱스(Codex), 클로드(Claude)와 함께 작업한 결과물입니다.</p>
+<p>계산하는 공간 : 개념편 · 공개판 0.9 · 2026년 10월 11일 · 집필 중인 원고 · © 임완철</p>
+<p><a href="https://climtc.github.io/">연구 기록으로 돌아가기</a> · <a href="https://github.com/climtc/computing-space-concepts">GitHub 저장소 <span aria-hidden="true">↗</span></a></p>
+</div></footer>
+</body>
+</html>

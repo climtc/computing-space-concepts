@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; frame-src https://climtc.github.io; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>부록 2. 공교육 실뜨기의 입력 기록 — 계산하는 공간 : 개념편</title>
+<meta name="description" content="공교육 실뜨기에서 제가 언어모델에게 건넨 입력을, 초고에 남아 있는 대로 모두 싣습니다. 6장에서 말했듯, 저는 공교육 실뜨기를 결과만이 아니라 그 결과를 만든 입력까지 함께 건네야 다른 사람이 같은 개념공간을 따라 걷고, 다르게 걸어 볼 수 있다고 생각했습니다. 아래">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%231f5147'/%3E%3Ctext x='20' y='29' text-anchor='middle' font-size='28' fill='white'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/book.css">
+<script src="assets/book.js" defer></script>
+</head>
+<body class="book-reading">
+<a class="skip" href="#reading-main">본문으로 건너뛰기</a>
+<header class="site-header"><div class="shell header-inner">
+<a class="brand" href="https://climtc.github.io/"><span class="brand-mark" aria-hidden="true">R<span>·</span></span><span>임완철<small>RESEARCH NOTES</small></span></a>
+<nav aria-label="주요 메뉴"><a href="https://climtc.github.io/#projects">연구 기록 <span aria-hidden="true">↗</span></a><a href="index.html#contents">차례</a><a href="full.html">한 페이지로 읽기</a></nav>
+</div></header>
+<main class="shell reading" id="reading-main">
+<div class="guide-layout">
+<aside class="toc-sidebar" id="book-toc"><details class="toc-mobile" open><summary>차례</summary>
+<a class="toc-home" href="index.html">계산하는 공간 : 개념편</a>
+<nav aria-label="원고 차례"><ol class="toc-list">
+<li><details class="toc-group"><summary><span class="toc-label">서</span><span class="toc-title">공간이 계산한다면</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="preface.html">장 처음으로 →</a><ol>
+<li><a href="preface.html#s-1" data-sec="s-1">이 책이 걷는 길</a></li>
+<li><a href="preface.html#s-2" data-sec="s-2">앞선 책들에서 가져온 것</a></li>
+<li><a href="preface.html#s-3" data-sec="s-3">공교육 실뜨기</a></li>
+<li><a href="preface.html#s-4" data-sec="s-4">이 책이 지키는 네 가지 구별</a></li>
+</ol></details></li>
+<li class="toc-part" aria-hidden="true">1부 · 담는 공간, 관계하는 공간, 계산하는 공간</li>
+<li><details class="toc-group"><summary><span class="toc-label">1장</span><span class="toc-title">담는 공간</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-01.html">장 처음으로 →</a><ol>
+<li><a href="chapter-01.html#s-1" data-sec="s-1">뉴턴의 절대공간</a></li>
+<li><a href="chapter-01.html#s-2" data-sec="s-2">라이프니츠의 반론</a></li>
+<li><a href="chapter-01.html#s-3" data-sec="s-3">칸트의 형식</a></li>
+<li><a href="chapter-01.html#s-4" data-sec="s-4">담는 공간이 가능하게 한 것</a></li>
+<li><a href="chapter-01.html#s-5" data-sec="s-5">담는 개념공간</a></li>
+<li><a href="chapter-01.html#s-6" data-sec="s-6">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">2장</span><span class="toc-title">관계하는 공간</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-02.html">장 처음으로 →</a><ol>
+<li><a href="chapter-02.html#s-1" data-sec="s-1">안에서 휘어짐을 아는 법</a></li>
+<li><a href="chapter-02.html#s-2" data-sec="s-2">리만 — 공간의 측도는 경험의 문제다</a></li>
+<li><a href="chapter-02.html#s-3" data-sec="s-3">민코프스키 — 공간과 시간의 결합</a></li>
+<li><a href="chapter-02.html#s-4" data-sec="s-4">아인슈타인 — 서로를 정하는 공간과 물질</a></li>
+<li><a href="chapter-02.html#s-5" data-sec="s-5">안에서 보는 은하</a></li>
+<li><a href="chapter-02.html#s-6" data-sec="s-6">관계하는 개념공간</a></li>
+<li><a href="chapter-02.html#s-7" data-sec="s-7">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">3장</span><span class="toc-title">계산하는 공간</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-03.html">장 처음으로 →</a><ol>
+<li><a href="chapter-03.html#s-1" data-sec="s-1">&#x27;공간이 계산한다&#x27;는 말의 약정</a></li>
+<li><a href="chapter-03.html#s-2" data-sec="s-2">언어가 계산 가능해진다는 것</a></li>
+<li><a href="chapter-03.html#s-3" data-sec="s-3">트랜스포머 안에서 일어나는 일</a></li>
+<li><a href="chapter-03.html#s-4" data-sec="s-4">같은 토큰, 다른 자리</a></li>
+<li><a href="chapter-03.html#s-5" data-sec="s-5">세 공간을 나란히 놓으면</a></li>
+<li><a href="chapter-03.html#s-6" data-sec="s-6">2025년의 &#x27;연속과 불연속&#x27; 다시 읽기</a></li>
+<li><a href="chapter-03.html#s-7" data-sec="s-7">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li class="toc-part" aria-hidden="true">2부 · 개념공간</li>
+<li><details class="toc-group"><summary><span class="toc-label">4장</span><span class="toc-title">축이 의미를 정하는 공간</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-04.html">장 처음으로 →</a><ol>
+<li><a href="chapter-04.html#s-1" data-sec="s-1">개념공간이란 무엇인가</a></li>
+<li><a href="chapter-04.html#s-2" data-sec="s-2">네 가지 개념공간</a></li>
+<li><a href="chapter-04.html#s-3" data-sec="s-3">모든 개념이 차원으로 표현되는가</a></li>
+<li><a href="chapter-04.html#s-4" data-sec="s-4">&#x27;차원&#x27;의 세 가지 쓰임</a></li>
+<li><a href="chapter-04.html#s-5" data-sec="s-5">관점이 축이 되는 조건</a></li>
+<li><a href="chapter-04.html#s-6" data-sec="s-6">축이 기저가 되는 조건</a></li>
+<li><a href="chapter-04.html#s-7" data-sec="s-7">축이 아닌 관계: 고리 셋</a></li>
+<li><a href="chapter-04.html#s-8" data-sec="s-8">개념공간의 네 층위</a></li>
+<li><a href="chapter-04.html#s-9" data-sec="s-9">차원을 더할 때와 뺄 때</a></li>
+<li><a href="chapter-04.html#s-10" data-sec="s-10">같은 낱말의 다른 뜻 — 곡률, 구경꾼, 위상</a></li>
+<li><a href="chapter-04.html#s-11" data-sec="s-11">다시 정의한 관점들</a></li>
+<li><a href="chapter-04.html#s-12" data-sec="s-12">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">5장</span><span class="toc-title">축이 계산될 때</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-05.html">장 처음으로 →</a><ol>
+<li><a href="chapter-05.html#s-1" data-sec="s-1">축이 계산의 대상이 될 때</a></li>
+<li><a href="chapter-05.html#s-2" data-sec="s-2">축이 계산의 재료가 될 때</a></li>
+<li><a href="chapter-05.html#s-3" data-sec="s-3">축이 변수가 될 때 — 계산하는 개념공간</a></li>
+<li><a href="chapter-05.html#s-4" data-sec="s-4">세 경우를 나란히 놓으면</a></li>
+<li><a href="chapter-05.html#s-5" data-sec="s-5">&#x27;기하학적 틀&#x27;은 고정된 무대인가</a></li>
+<li><a href="chapter-05.html#s-6" data-sec="s-6">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">6장</span><span class="toc-title">공교육이라는 낱말의 여러 겹 — 공교육 실뜨기</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-06.html">장 처음으로 →</a><ol>
+<li><a href="chapter-06.html#s-1" data-sec="s-1">같은 낱말, 다른 강조</a></li>
+<li><a href="chapter-06.html#s-2" data-sec="s-2">의미의 여러 겹을 펼쳐 보이는 공간</a></li>
+<li><a href="chapter-06.html#s-3" data-sec="s-3">계산하는 개념공간을 건넨다는 것</a></li>
+<li><a href="chapter-06.html#s-4" data-sec="s-4">열네 단계의 길</a></li>
+<li><a href="chapter-06.html#s-5" data-sec="s-5">차원이 된 열네 개념</a></li>
+<li><a href="chapter-06.html#s-6" data-sec="s-6">네 대상을 장치의 자리에 넣어 보기</a></li>
+<li><a href="chapter-06.html#s-7" data-sec="s-7">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">7장</span><span class="toc-title">언어모델에게 개념공간을 계산시켰을 때</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-07.html">장 처음으로 →</a><ol>
+<li><a href="chapter-07.html#s-1" data-sec="s-1">열네 단계를 다시 따라가기</a></li>
+<li><a href="chapter-07.html#s-2" data-sec="s-2">네 개의 사례는 서로 다른 답을 냈는가</a></li>
+<li><a href="chapter-07.html#s-3" data-sec="s-3">선언과 기록</a></li>
+<li><a href="chapter-07.html#s-4" data-sec="s-4">정합적인 문장은 무엇의 증거인가</a></li>
+<li><a href="chapter-07.html#s-5" data-sec="s-5">설계된 공간과 학습된 공간 사이</a></li>
+<li><a href="chapter-07.html#s-6" data-sec="s-6">측정할 수 있는 질문으로 바꾸기</a></li>
+<li><a href="chapter-07.html#s-7" data-sec="s-7">고쳐 쓴 읽기 하나 — 종이 교과서</a></li>
+<li><a href="chapter-07.html#s-8" data-sec="s-8">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li class="toc-part" aria-hidden="true">3부 · 계산하는 개념공간으로 생각하기</li>
+<li><details class="toc-group"><summary><span class="toc-label">8장</span><span class="toc-title">접고 펼치는 조작과 매체</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-08.html">장 처음으로 →</a><ol>
+<li><a href="chapter-08.html#s-1" data-sec="s-1">투영과 단면</a></li>
+<li><a href="chapter-08.html#s-2" data-sec="s-2">축의 추가와 제거</a></li>
+<li><a href="chapter-08.html#s-3" data-sec="s-3">단위의 분해와 재종합</a></li>
+<li><a href="chapter-08.html#s-4" data-sec="s-4">시점의 이동</a></li>
+<li><a href="chapter-08.html#s-5" data-sec="s-5">시간의 펼침</a></li>
+<li><a href="chapter-08.html#s-6" data-sec="s-6">다섯 조작이 실패하는 곳</a></li>
+<li><a href="chapter-08.html#s-7" data-sec="s-7">공교육으로 돌아오기</a></li>
+<li><a href="chapter-08.html#s-8" data-sec="s-8">종이는 무엇을 접는가</a></li>
+<li><a href="chapter-08.html#s-9" data-sec="s-9">무엇을 비교해야 하는가</a></li>
+<li><a href="chapter-08.html#s-10" data-sec="s-10">정보를 같게 맞춘다는 것 — 사례 셋</a></li>
+<li><a href="chapter-08.html#s-11" data-sec="s-11">도식은 누구의 시선인가</a></li>
+<li><a href="chapter-08.html#s-12" data-sec="s-12">고차원을 정직하게 말하는 법</a></li>
+<li><a href="chapter-08.html#s-13" data-sec="s-13">비교를 위한 설계</a></li>
+<li><a href="chapter-08.html#s-14" data-sec="s-14">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">9장</span><span class="toc-title">계산되지 않는 것과 거리</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-09.html">장 처음으로 →</a><ol>
+<li><a href="chapter-09.html#s-1" data-sec="s-1">구경꾼에서 생존자로 — 유비의 무게</a></li>
+<li><a href="chapter-09.html#s-2" data-sec="s-2">언덕 위의 구경꾼</a></li>
+<li><a href="chapter-09.html#s-3" data-sec="s-3">어긋남의 네 가지 출처</a></li>
+<li><a href="chapter-09.html#s-4" data-sec="s-4">교실 창문 앞에서</a></li>
+<li><a href="chapter-09.html#s-5" data-sec="s-5">도구가 다시 대상이 될 때</a></li>
+<li><a href="chapter-09.html#s-6" data-sec="s-6">일곱 개의 자리</a></li>
+<li><a href="chapter-09.html#s-7" data-sec="s-7">손으로 돌리는 일은 계산을 바꾼다</a></li>
+<li><a href="chapter-09.html#s-8" data-sec="s-8">&#x27;외골격&#x27; 은유를 내려놓는 이유</a></li>
+<li><a href="chapter-09.html#s-9" data-sec="s-9">끊는 자리, 기록하는 자리</a></li>
+<li><a href="chapter-09.html#s-10" data-sec="s-10">책임은 어디에 남는가</a></li>
+<li><a href="chapter-09.html#s-11" data-sec="s-11">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">10장</span><span class="toc-title">교실 밖에서, 그리고 실행</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-10.html">장 처음으로 →</a><ol>
+<li><a href="chapter-10.html#s-1" data-sec="s-1">과학의 모형 — 상태공간은 공간이 아니다</a></li>
+<li><a href="chapter-10.html#s-2" data-sec="s-2">역사의 인식 — 묶는 규칙과 갈라지는 계통</a></li>
+<li><a href="chapter-10.html#s-3" data-sec="s-3">디자인과 건축 — 기하는 시험할 수 있다, 행동은 아니다</a></li>
+<li><a href="chapter-10.html#s-4" data-sec="s-4">인문사회 이론 — 관점의 배열로 남을 권리</a></li>
+<li><a href="chapter-10.html#s-5" data-sec="s-5">연구 글쓰기 — 근거 지도라는 개념공간</a></li>
+<li><a href="chapter-10.html#s-6" data-sec="s-6">계산이 판단을 대신하지 못하는 곳</a></li>
+<li><a href="chapter-10.html#s-7" data-sec="s-7">실행에는 층이 있다</a></li>
+<li><a href="chapter-10.html#s-8" data-sec="s-8">초고의 예를 다시 보기</a></li>
+<li><a href="chapter-10.html#s-9" data-sec="s-9">적용을 위한 실행의 조건</a></li>
+<li><a href="chapter-10.html#s-10" data-sec="s-10">이름에 대하여</a></li>
+<li><a href="chapter-10.html#s-11" data-sec="s-11">포스트언어라는 전망에 대하여</a></li>
+<li><a href="chapter-10.html#s-12" data-sec="s-12">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">결</span><span class="toc-title">계산하는 개념공간</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="conclusion.html">장 처음으로 →</a><ol>
+<li><a href="conclusion.html#s-1" data-sec="s-1">확인한 것</a></li>
+<li><a href="conclusion.html#s-2" data-sec="s-2">가정한 것</a></li>
+<li><a href="conclusion.html#s-3" data-sec="s-3">제안한 것</a></li>
+<li><a href="conclusion.html#s-4" data-sec="s-4">아직 하지 않은 것</a></li>
+<li><a href="conclusion.html#s-5" data-sec="s-5">새로운 사유의 단위라는 말에 대하여</a></li>
+<li><a href="conclusion.html#s-6" data-sec="s-6">접힌 문장으로 돌아가며</a></li>
+</ol></details></li>
+<li class="toc-part" aria-hidden="true">부록</li>
+<li><details class="toc-group"><summary><span class="toc-label">부록 1</span><span class="toc-title">사례 읽기 안내</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="appendix-1.html">장 처음으로 →</a><ol>
+<li><a href="appendix-1.html#s-1" data-sec="s-1">네트워크가 없을 때</a></li>
+</ol></details></li>
+<li><details class="toc-group" open><summary class="is-current"><span class="toc-label">부록 2</span><span class="toc-title">공교육 실뜨기의 입력 기록</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="appendix-2.html" aria-current="page">장 처음으로 →</a><ol>
+<li><a href="#s-1" data-sec="s-1">관점을 하나씩 더한 열네 단계</a></li>
+<li><a href="#s-2" data-sec="s-2">관점마다 따로 요청한 정의</a></li>
+<li><a href="#s-3" data-sec="s-3">네 대상을 장치 자리에 넣은 분석</a></li>
+<li><a href="#s-4" data-sec="s-4">이 기록에 없는 것</a></li>
+</ol></details></li>
+</ol></nav>
+</details></aside>
+<article class="chapter" id="appendix-2">
+<header class="chapter-head"><p class="eyebrow">부록 · 부록 2</p><h1>공교육 실뜨기의 입력 기록</h1></header>
+<p>공교육 실뜨기에서 제가 언어모델에게 건넨 입력을, 초고에 남아 있는 대로 모두 싣습니다. 6장에서 말했듯, 저는 공교육 실뜨기를 결과만이 아니라 그 결과를 만든 입력까지 함께 건네야 다른 사람이 같은 개념공간을 따라 걷고, 다르게 걸어 볼 수 있다고 생각했습니다. 아래 입력은 고치지 않았고, 오탈자도 그대로 두었습니다. 각 입력 아래에는 그 입력에 대한 생성문의 제목만 적었습니다. 생성문 본문은 생성형 언어모델(Gemini 2.5 Pro)이 쓴 것이므로 이 책에 옮기지 않았습니다.</p>
+<h2 id="s-1">1. 관점을 하나씩 더한 열네 단계</h2>
+<p><strong>1단계 — Common, Logos</strong></p>
+<blockquote><p>‘Common’과 ‘Logos’ 로 시작해보자. ‘Common’은 공통의 것, 공동의 것이라는 아이디어를 중심으로, ‘Logos’는 서양 철학사에서 ‘보편적인 원리’라는 의미에 집중해서 개념틀을 만들어줘.</p></blockquote>
+<p>생성문 제목: 1. ‘Common’과 ‘Logos’로 시작</p>
+<p><strong>2단계 — (공교육에 적용)</strong></p>
+<blockquote><p>‘Common’과 ‘Logos’ 로 만들어진 개념틀에 기준해서, ‘공교육’을 해석해줘.</p></blockquote>
+<p>생성문 제목: 2. ‘Common’과 ‘Logos’의 교차점에 공교육 자리 잡기</p>
+<p><strong>3단계 — Apparatus</strong></p>
+<blockquote><p>‘Common’과 ‘Logos’ 로 만들어진 개념틀에 ‘Apparatus’를 추가해서 ‘공교육’을 해석해줘. ‘Apparatus’는 ‘장치’로 번역할게.</p></blockquote>
+<p>생성문 제목: 3. 공교육의 삼중주: Common, Logos, 그리고 Apparatus의 상호작용</p>
+<p><strong>4단계 — Subject</strong></p>
+<blockquote><p>‘Common’, ‘Logos’, ‘Apparatus’로 만들어진 개념틀에 ‘Subject’를 추가해서 ‘공교육’을 해석해줘. 라깡과 하이데거가 집중했던 ‘Subject’ 의 이중적인 의미를 중요하게 고려해서 해석해야 해.</p></blockquote>
+<p>생성문 제목: 4. 공교육의 사중주: Common, Logos, Apparatus, 그리고 Subject의 동학(動學)</p>
+<p><strong>5단계 — Public</strong></p>
+<blockquote><p>‘Common’, ‘Logos’, ‘Apparatus’, ‘Subject’ 로 만들어진 개념틀에 ‘Public’을 추가해서 해석해줘. ‘Public’ 그리고 ‘Public’과 ‘Common’의 구분은 아렌트의 관점을 참고해줘. 여전히 이 개념공간의 중심에는 ‘공교육’이 있어.</p></blockquote>
+<p>생성문 제목: 5. 공교육의 오중주: Common, Logos, Apparatus, Subject, 그리고 Public의 동학</p>
+<p><strong>6단계 — Time</strong></p>
+<blockquote><p>개념틀에 하나를 더 추가할게. Time 이야. 시간에 따른 변화의 의미로 사용할게. ‘Common’, ‘Logos’, ‘Apparatus’, ‘Subject’, 'Public'으로 구축된 개념틀에 ‘Time’을 추가해서 개념틀을 재구조화해줘. 여전히 이 개념틀로 탐구하는 대상은 공교육이야.</p></blockquote>
+<p>생성문 제목: 6. 공교육의 육중주: 시간(Time)의 축 위에서 펼쳐지는 Common, Logos, Apparatus, Subject, Public의 변증법</p>
+<p><strong>7단계 — System</strong></p>
+<blockquote><p>이제 조금 다른 구인 혹은 차원을 개념틀에 추가할게. System 이야. 루만의 관점에서의 System 이야. 지금까지의 개념틀을 한 단위의 대상으로 다루는 아이디어가 필요하다고 생각해. System을 이 개념틀에 추가해서 재구조화해줘. 여전히 이 개념틀의 중심에는 공교육이 있어.</p></blockquote>
+<p>생성문 제목: 7. 자기생산(Autopoiesis)하는 공교육 시스템: Common, Logos, Apparatus, Subject, Public, Time의 재구조화</p>
+<p><strong>8단계 — System b</strong></p>
+<blockquote><p>System이라든 단위를 추가했으니, 이제 추가해야 하는 건, '다른 System' 이야. 이걸 'System b'라고 할게. 'System b'를 추가해서 다수의 개념틀 들로 구성된 개념 공간을 개념적으로 구조화해줘. 여전히 개념틀, 개념공간의 중심에는 '공교육'이 있어.</p></blockquote>
+<p>생성문 제목: 8. 공교육의 개념 공간: 체계 a(공교육)와 체계 b(타자 체계)의 공명(共鳴)과 상호 교란</p>
+<p><strong>9단계 — Interface</strong></p>
+<blockquote><p>이제 시스템은 다른 시스템과 맺는 관계를 고려해야 해. 시스템과 시스템이 맺는 관계를 'Interface'로 개념화할게. 시스템과 시스템이 맺는 관계를 관리하는 시스템 측의 구성요소의 관점으로 'Interface'를 추가해서 다시 개념적으로 구조화해줘. 여전히 중심에는 '공교육'이 있어.</p></blockquote>
+<p>생성문 제목: 9. 공교육 체계의 Interface: 외부 세계(System b)와 맺는 관계의 제도적 관리</p>
+<p><strong>10단계 — Spectator</strong></p>
+<blockquote><p>이제 개념틀이 개념 공간이 되었으니, 이 개념공간을 경험하는 주체를 추가할게. 블루멘베르크의 '구경꾼', 난파하고 있는 배를 멀리 육지언덕에서 바라보는 구경꾼, 하지만 자신이 서 있는 육지조차도 무너져 내릴수 있다는 걸 모르고 있는 구경꾼 은유를 Spectator로 추가해서 다시 구조화해줘. 여전히 중심에는 '공교육'이 있어.</p></blockquote>
+<p>생성문 제목: 10. 공교육 개념 공간의 구경꾼(Spectator): 이론적 관망의 필연성과 그 인식론적 불안정성</p>
+<p><strong>11단계 — 구경꾼b(동료 구경꾼)</strong></p>
+<blockquote><p>구경꾼을 추가했으니 이제 '구경꾼b'를 추가할게. 블루멘베르크도 '동료 구경꾼' 이라는 은유를 추가하지는 않았으니, 좀 자유롭게 '구경꾼'에게 '동료 구경꾼(구경꾼b)'을 추가한 뒤, 다시 개념적으로 구조화해줘. 여전히, '공교육'이 중심이야.</p></blockquote>
+<p>생성문 제목: 11. 공교육 개념 공간의 공동 관찰: 구경꾼(Spectator a)과 동료 구경꾼(Spectator b)의 대화</p>
+<p><strong>12단계 — Telescope</strong></p>
+<blockquote><p>구경꾼b를 추가하면 당연히 구경꾼 사이의 관계맺음이 추가된다는 점에 동의해. 이제, 구경꾼과 구경꾼들 사이의 관계맺음의 의미에 영향을 줄 수 있는 요소를 추가할게. 먼저, 그들이 사용하는 '망원경'이야. 망원경은 실재하는 대상과 관찰하는 대상 사이에 차이를 만들거든. 구경꾼b와 구경꾼c가 사용하는 망원경 역시 서로 같다는 보장이 없고. 이 아이디어를 추가해서, 개념적으로 재 구조화해줘. 여전히 중심에는 '공교육'이 있어.</p></blockquote>
+<p>생성문 제목: 12. 공교육 개념 공간의 관찰 장비(Telescope): 개념틀이라는 망원경의 매개와 관점의 비공약성(Incommensurability)</p>
+<p><strong>13단계 — Curvature</strong></p>
+<blockquote><p>'구경꾼'도 서로 다르고, 구경꾼이 사용하는 망원경도 서로 다른 상황에서 실재를 고정시키는 방법으로 ‘삼각측량(triangulation)’ 아이디어가 나왔으니, 곡률(Curvature)을 추가할 준비가 되었어. 리만의 관점에서의 곡률이야. 공간은 공간 그 자체가 '휨의 정도'를 가지는데, 공간 내부의 존재가 이 '휨의 정도'를 어떻게 알 수 있는가와 관련해서 리만이 고안했던 아이디어, 곡률을 추가해서 개념적으로 재구조화해줘. 여전히 중심에는 '공교육'이 있어.</p></blockquote>
+<p>생성문 제목: 13. 공교육 개념 공간의 곡률(Curvature): 삼각측량을 통한 시대정신의 기하학 탐구</p>
+<p><strong>14단계 — Survivor</strong></p>
+<blockquote><p>이제 구경꾼 뿐만 아니라, '난파선 문제를 해결하기 위해서 새로운 배를 설계하는 자', '난파하고 있는 배에서 승객을 구조하기 위해 바다로 뛰어드는 자', 그리고 무엇보다 중요한 '난파선 안에 있는 자' 들을 포함한 뒤, 구경꾼을 포함해서 이들 모두를 아감벤의 '생존자' (아우슈비츠에서 살아남은 생존자들의 증언으로 아우슈비츠의 실체에 접근할 수 있는가?) 관점으로 추가하고 개념적으로 재구조화해줘. 계속 '공교육'이 중심이야.</p></blockquote>
+<p>생성문 제목: 14. 공교육이라는 난파선의 생존자들(Survivors): 증언의 불가능성과 윤리적 주체의 탄생</p>
+<h2 id="s-2">2. 관점마다 따로 요청한 정의</h2>
+<p>열네 단계를 마친 뒤, 저는 관점마다 정의를 따로 요청했습니다. 같은 대화 안에서였는지는 기록에 남아 있지 않습니다. 정의를 요청하지 않은 관점(System b, Interface, 동료 구경꾼, Telescope)은 열네 단계의 입력이 그 뜻을 정한 셈입니다.</p>
+<p><strong>Apparatus(장치)</strong></p>
+<blockquote><p>Apparatus (장치)를 라투르의 Actor, 푸코의 dispositif, 하이데거의 기술의 개념과 비교하고 이 개념들이 공유하는 공통된 내용을 중심으로 정의해줘.</p></blockquote>
+<p>생성문 제목: Apparatus(장치) : 행위자, 권력, 그리고 세계-질서의 교차점</p>
+<p><strong>Subject(주체)</strong></p>
+<blockquote><p>Subject를 이중성과 외부와의 상호작용을 통한 유연한 변화라는 아이디어, 라캉과 하이데거의 관점 그리고 능동성(능동태)과 피동성(수동태)의 의미를 모두 가지는 단어라는 점을 '중동태'라는 아이디어를 중심으로 정의해줘.</p></blockquote>
+<p>생성문 제목: Subject(주체) : 중동태, 분열된 자아, 그리고 세계-내-존재</p>
+<p><strong>Time(시간)</strong></p>
+<blockquote><p>Time 을 '변화'를 생각의 대상으로 다루어 기호화한 뉴튼의 아이디어, 존재와 분리독립된 칸트적인 의미를 넘어, 변화 그자체가 본질일 수 있는 진화론과 헤결의 아이디를 넘어, 존재와 내적으로 연결되어 있는 '시공간'의 의미를 강조해서, '공교육'을 개념적으로 탐구하는 중요한 구인으로서의 의미를 중심으로 정의해줘.</p></blockquote>
+<p>생성문 제목: Time(시간): 존재의 내적 차원으로서의 시공간</p>
+<p><strong>System(체계)</strong></p>
+<blockquote><p>System 을 루만이 '사회'를 탐구하기 위한 일반 이론의 기본 단위로 'System'을 사용하며 구축한 고유한 방법론과 이론틀을 중심으로 정의해줘.</p></blockquote>
+<p>생성문 제목: System(체계) : 루만적 관점에서의 자기생산과 작동적 폐쇄성</p>
+<p><strong>Common, Public</strong></p>
+<blockquote><p>Common 과 Public 은 아렌트의 관점을 중심으로 서로 비교해서 정의해줘.</p></blockquote>
+<p>생성문 제목: Common, Public : 한나 아렌트의 공동 세계와 공적 영역</p>
+<p><strong>Logos(로고스)</strong></p>
+<blockquote><p>Logos 는 서양철학사를 관통하는 핵심적인 구인이라는 점을 강조해서 정의해줘.</p></blockquote>
+<p>생성문 제목: Logos(로고스) : 서양 철학사를 관통하는 질서의 원리</p>
+<p><strong>Spectator(구경꾼)</strong></p>
+<blockquote><p>Spectator 는 블루멘베르크의 이론을 폭넓게 담고 특히, 루크레티우스를 해석하는 관점을 중심으로 정의해줘.</p></blockquote>
+<p>생성문 제목: Spectator(구경꾼) : 블루멘베르크의 이론적 관조와 그 불안정성</p>
+<p><strong>Survivor(생존자)</strong></p>
+<blockquote><p>Survivor 는 아감벤의 관점으로, 특정 체제에서 살아남은 자들의 증언으로 해당 체제의 본질에 접근할 수는 없다는 점을 강조해서, 공교육에서 살아남은 자들 (예를 들어, 공교육을 거쳐나온 뒤 공교육을 분석의 대상으로 다루는 나) 만으로는 공교육의 실체에 접근할 수 없다는 관점을 중심으로 정의해줘.</p></blockquote>
+<p>생성문 제목: Survivor(생존자) : 아감벤의 증언과 그 불가능성의 윤리</p>
+<p><strong>Curvature(곡률)</strong></p>
+<blockquote><p>Curvature 는 유클리드, 리만, 민코프스키, 아인슈타인의 아이디어를 중심으로 정의해줘.</p></blockquote>
+<p>생성문 제목: Curvature(곡률) : 사유의 공간을 휘게 만드는 보이지 않는 힘</p>
+<h2 id="s-3">3. 네 대상을 장치 자리에 넣은 분석</h2>
+<p>마지막으로 네 대상을 Apparatus의 자리에 넣어, 앞에서 만든 관점들을 모두 써서 분석하게 했습니다. 네 입력은 대상만 다르고 형식이 같습니다.</p>
+<p><strong>종이 교과서</strong></p>
+<blockquote><p>Apparatus에 '종이교과서'를 대입해서 공교육을 구성하는 중요한 구성요소인 '종이교과서'가 공교육 내에서 어떤 의미인지, 어떤 역할을 맡고 있는지, 어떤 한계와 제한을 공교육에 제공하는지, 무엇이 포함되고 무엇이 배제되도록 만드는지를 포함해서, 어떻게 변화할 필요와 가능성이 있는지를 개념틀에 포함되어 있는 구인을 풍부하게 활용해서 총체적으로 분석하고 종합한 뒤 글로 작성해줘.</p></blockquote>
+<p>생성문 제목: 종이 교과서라는 장치(Apparatus) : 공교육 개념 공간을 통해 본 그 의미와 한계</p>
+<p><strong>교실 출입문의 작은 창문</strong></p>
+<blockquote><p>Apparatus에 '교실 출입문의 작은 창문(밖(복도)에서는 들여다볼 수 있지만, 안에서는 누군가가 들여다본다는 사실을 확인하기 어려운 정도의 크기의, 거의 모든 교실 출입문에 배치된 창문)'를 대입해서 공교육을 구성하는 중요한 구성요소인 '교실 출입문의 작은 창문'이 공교육 내에서 어떤 의미인지, 어떤 역할을 맡고 있는지, 어떤 한계와 제한을 공교육에 제공하는지, 무엇이 포함되고 무엇이 배제되도록 만드는지를 포함해서, 어떻게 변화할 필요와 가능성이 있는지를 개념틀에 포함되어 있는 구인을 풍부하게 활용해서 총체적으로 분석하고 종합한 뒤 글로 작성해줘.</p></blockquote>
+<p>생성문 제목: 교실 문 작은 창이라는 장치(Apparatus): 비대칭적 시선과 투명성의 환상</p>
+<p><strong>국가수준 교육과정</strong></p>
+<blockquote><p>Apparatus에 '국가수준 교육과정(모든 학생들에게 제공되어야 하는 지식, 정보, 평가기준, 경험 등을 상세하게 규정한 국가수준 교육계획)'을 대입해서 공교육을 구성하는 중요한 구성요소인 '국가수준 교육과정'이 공교육 내에서 어떤 의미인지, 어떤 역할을 맡고 있는지, 어떤 한계와 제한을 공교육에 제공하는지, 무엇이 포함되고 무엇이 배제되도록 만드는지를 포함해서, 어떻게 변화할 필요와 가능성이 있는지를 개념틀에 포함되어 있는 구인을 풍부하게 활용해서 총체적으로 분석하고 종합한 뒤 글로 작성해줘.</p></blockquote>
+<p>생성문 제목: 국가수준 교육과정이라는 장치(Apparatus): 보이지 않는 질서와 표준화된 영혼의 설계도</p>
+<p><strong>교실</strong></p>
+<blockquote><p>Apparatus에 '교실(표준 크기와 모양이 있는 물리적 공간으로서의 교실)'를 대입해서 공교육을 구성하는 중요한 구성요소인 '교실'이 공교육 내에서 어떤 의미인지, 어떤 역할을 맡고 있는지, 어떤 한계와 제한을 공교육에 제공하는지, 무엇이 포함되고 무엇이 배제되도록 만드는지를 포함해서, 어떻게 변화할 필요와 가능성이 있는지를 개념틀에 포함되어 있는 구인을 풍부하게 활용해서 총체적으로 분석하고 종합한 뒤 글로 작성해줘.</p></blockquote>
+<p>생성문 제목: 교실이라는 장치(Apparatus): 규격화된 공간과 길들여진 신체의 지형학</p>
+<h2 id="s-4">4. 이 기록에 없는 것</h2>
+<ul><li>원래의 대화 화면과 그 로그 파일. 남아 있는 것은 초고에 옮겨 적은 입력과 생성문입니다.</li><li>모델의 설정값(온도 등)과 같은 입력을 되풀이했을 때의 결과.</li><li>생성문을 손본 범위의 기록. 저는 "완전히 벗어난 문장, 가독성이 너무 떨어지는 문장"만 조금 손보았다고 적어 두었을 뿐, 어느 문장을 어떻게 고쳤는지는 남기지 않았습니다.</li></ul>
+<nav class="chapter-nav" aria-label="이전·다음 장"><a class="prev" href="appendix-1.html"><span>← 이전</span>부록 1. 사례 읽기 안내</a><span></span></nav>
+</article>
+</div>
+</main>
+<footer class="site-footer"><div class="shell">
+<p class="cowork">이 원고와 이 원고에 연결된 상호작용 사례들은 제가 코덱스(Codex), 클로드(Claude)와 함께 작업한 결과물입니다.</p>
+<p>계산하는 공간 : 개념편 · 공개판 0.9 · 2026년 10월 11일 · 집필 중인 원고 · © 임완철</p>
+<p><a href="https://climtc.github.io/">연구 기록으로 돌아가기</a> · <a href="https://github.com/climtc/computing-space-concepts">GitHub 저장소 <span aria-hidden="true">↗</span></a></p>
+</div></footer>
+</body>
+</html>

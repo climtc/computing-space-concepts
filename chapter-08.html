@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; frame-src https://climtc.github.io; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>8장. 접고 펼치는 조작과 매체 — 계산하는 공간 : 개념편</title>
+<meta name="description" content="1부에서 공간과 그 안의 것의 관계가 바뀌어 온 길을, 2부에서 개념공간과 그 축이 계산될 때를 보았습니다. 3부는 계산하는 개념공간을 생각의 도구로 쓰는 법을 묻습니다. 먼저 손을 움직여 봅니다.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%231f5147'/%3E%3Ctext x='20' y='29' text-anchor='middle' font-size='28' fill='white'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/book.css">
+<script src="assets/book.js" defer></script>
+</head>
+<body class="book-reading">
+<a class="skip" href="#reading-main">본문으로 건너뛰기</a>
+<header class="site-header"><div class="shell header-inner">
+<a class="brand" href="https://climtc.github.io/"><span class="brand-mark" aria-hidden="true">R<span>·</span></span><span>임완철<small>RESEARCH NOTES</small></span></a>
+<nav aria-label="주요 메뉴"><a href="https://climtc.github.io/#projects">연구 기록 <span aria-hidden="true">↗</span></a><a href="index.html#contents">차례</a><a href="full.html">한 페이지로 읽기</a></nav>
+</div></header>
+<main class="shell reading" id="reading-main">
+<div class="guide-layout">
+<aside class="toc-sidebar" id="book-toc"><details class="toc-mobile" open><summary>차례</summary>
+<a class="toc-home" href="index.html">계산하는 공간 : 개념편</a>
+<nav aria-label="원고 차례"><ol class="toc-list">
+<li><details class="toc-group"><summary><span class="toc-label">서</span><span class="toc-title">공간이 계산한다면</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="preface.html">장 처음으로 →</a><ol>
+<li><a href="preface.html#s-1" data-sec="s-1">이 책이 걷는 길</a></li>
+<li><a href="preface.html#s-2" data-sec="s-2">앞선 책들에서 가져온 것</a></li>
+<li><a href="preface.html#s-3" data-sec="s-3">공교육 실뜨기</a></li>
+<li><a href="preface.html#s-4" data-sec="s-4">이 책이 지키는 네 가지 구별</a></li>
+</ol></details></li>
+<li class="toc-part" aria-hidden="true">1부 · 담는 공간, 관계하는 공간, 계산하는 공간</li>
+<li><details class="toc-group"><summary><span class="toc-label">1장</span><span class="toc-title">담는 공간</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-01.html">장 처음으로 →</a><ol>
+<li><a href="chapter-01.html#s-1" data-sec="s-1">뉴턴의 절대공간</a></li>
+<li><a href="chapter-01.html#s-2" data-sec="s-2">라이프니츠의 반론</a></li>
+<li><a href="chapter-01.html#s-3" data-sec="s-3">칸트의 형식</a></li>
+<li><a href="chapter-01.html#s-4" data-sec="s-4">담는 공간이 가능하게 한 것</a></li>
+<li><a href="chapter-01.html#s-5" data-sec="s-5">담는 개념공간</a></li>
+<li><a href="chapter-01.html#s-6" data-sec="s-6">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">2장</span><span class="toc-title">관계하는 공간</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-02.html">장 처음으로 →</a><ol>
+<li><a href="chapter-02.html#s-1" data-sec="s-1">안에서 휘어짐을 아는 법</a></li>
+<li><a href="chapter-02.html#s-2" data-sec="s-2">리만 — 공간의 측도는 경험의 문제다</a></li>
+<li><a href="chapter-02.html#s-3" data-sec="s-3">민코프스키 — 공간과 시간의 결합</a></li>
+<li><a href="chapter-02.html#s-4" data-sec="s-4">아인슈타인 — 서로를 정하는 공간과 물질</a></li>
+<li><a href="chapter-02.html#s-5" data-sec="s-5">안에서 보는 은하</a></li>
+<li><a href="chapter-02.html#s-6" data-sec="s-6">관계하는 개념공간</a></li>
+<li><a href="chapter-02.html#s-7" data-sec="s-7">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">3장</span><span class="toc-title">계산하는 공간</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-03.html">장 처음으로 →</a><ol>
+<li><a href="chapter-03.html#s-1" data-sec="s-1">&#x27;공간이 계산한다&#x27;는 말의 약정</a></li>
+<li><a href="chapter-03.html#s-2" data-sec="s-2">언어가 계산 가능해진다는 것</a></li>
+<li><a href="chapter-03.html#s-3" data-sec="s-3">트랜스포머 안에서 일어나는 일</a></li>
+<li><a href="chapter-03.html#s-4" data-sec="s-4">같은 토큰, 다른 자리</a></li>
+<li><a href="chapter-03.html#s-5" data-sec="s-5">세 공간을 나란히 놓으면</a></li>
+<li><a href="chapter-03.html#s-6" data-sec="s-6">2025년의 &#x27;연속과 불연속&#x27; 다시 읽기</a></li>
+<li><a href="chapter-03.html#s-7" data-sec="s-7">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li class="toc-part" aria-hidden="true">2부 · 개념공간</li>
+<li><details class="toc-group"><summary><span class="toc-label">4장</span><span class="toc-title">축이 의미를 정하는 공간</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-04.html">장 처음으로 →</a><ol>
+<li><a href="chapter-04.html#s-1" data-sec="s-1">개념공간이란 무엇인가</a></li>
+<li><a href="chapter-04.html#s-2" data-sec="s-2">네 가지 개념공간</a></li>
+<li><a href="chapter-04.html#s-3" data-sec="s-3">모든 개념이 차원으로 표현되는가</a></li>
+<li><a href="chapter-04.html#s-4" data-sec="s-4">&#x27;차원&#x27;의 세 가지 쓰임</a></li>
+<li><a href="chapter-04.html#s-5" data-sec="s-5">관점이 축이 되는 조건</a></li>
+<li><a href="chapter-04.html#s-6" data-sec="s-6">축이 기저가 되는 조건</a></li>
+<li><a href="chapter-04.html#s-7" data-sec="s-7">축이 아닌 관계: 고리 셋</a></li>
+<li><a href="chapter-04.html#s-8" data-sec="s-8">개념공간의 네 층위</a></li>
+<li><a href="chapter-04.html#s-9" data-sec="s-9">차원을 더할 때와 뺄 때</a></li>
+<li><a href="chapter-04.html#s-10" data-sec="s-10">같은 낱말의 다른 뜻 — 곡률, 구경꾼, 위상</a></li>
+<li><a href="chapter-04.html#s-11" data-sec="s-11">다시 정의한 관점들</a></li>
+<li><a href="chapter-04.html#s-12" data-sec="s-12">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">5장</span><span class="toc-title">축이 계산될 때</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-05.html">장 처음으로 →</a><ol>
+<li><a href="chapter-05.html#s-1" data-sec="s-1">축이 계산의 대상이 될 때</a></li>
+<li><a href="chapter-05.html#s-2" data-sec="s-2">축이 계산의 재료가 될 때</a></li>
+<li><a href="chapter-05.html#s-3" data-sec="s-3">축이 변수가 될 때 — 계산하는 개념공간</a></li>
+<li><a href="chapter-05.html#s-4" data-sec="s-4">세 경우를 나란히 놓으면</a></li>
+<li><a href="chapter-05.html#s-5" data-sec="s-5">&#x27;기하학적 틀&#x27;은 고정된 무대인가</a></li>
+<li><a href="chapter-05.html#s-6" data-sec="s-6">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">6장</span><span class="toc-title">공교육이라는 낱말의 여러 겹 — 공교육 실뜨기</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-06.html">장 처음으로 →</a><ol>
+<li><a href="chapter-06.html#s-1" data-sec="s-1">같은 낱말, 다른 강조</a></li>
+<li><a href="chapter-06.html#s-2" data-sec="s-2">의미의 여러 겹을 펼쳐 보이는 공간</a></li>
+<li><a href="chapter-06.html#s-3" data-sec="s-3">계산하는 개념공간을 건넨다는 것</a></li>
+<li><a href="chapter-06.html#s-4" data-sec="s-4">열네 단계의 길</a></li>
+<li><a href="chapter-06.html#s-5" data-sec="s-5">차원이 된 열네 개념</a></li>
+<li><a href="chapter-06.html#s-6" data-sec="s-6">네 대상을 장치의 자리에 넣어 보기</a></li>
+<li><a href="chapter-06.html#s-7" data-sec="s-7">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">7장</span><span class="toc-title">언어모델에게 개념공간을 계산시켰을 때</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-07.html">장 처음으로 →</a><ol>
+<li><a href="chapter-07.html#s-1" data-sec="s-1">열네 단계를 다시 따라가기</a></li>
+<li><a href="chapter-07.html#s-2" data-sec="s-2">네 개의 사례는 서로 다른 답을 냈는가</a></li>
+<li><a href="chapter-07.html#s-3" data-sec="s-3">선언과 기록</a></li>
+<li><a href="chapter-07.html#s-4" data-sec="s-4">정합적인 문장은 무엇의 증거인가</a></li>
+<li><a href="chapter-07.html#s-5" data-sec="s-5">설계된 공간과 학습된 공간 사이</a></li>
+<li><a href="chapter-07.html#s-6" data-sec="s-6">측정할 수 있는 질문으로 바꾸기</a></li>
+<li><a href="chapter-07.html#s-7" data-sec="s-7">고쳐 쓴 읽기 하나 — 종이 교과서</a></li>
+<li><a href="chapter-07.html#s-8" data-sec="s-8">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li class="toc-part" aria-hidden="true">3부 · 계산하는 개념공간으로 생각하기</li>
+<li><details class="toc-group" open><summary class="is-current"><span class="toc-label">8장</span><span class="toc-title">접고 펼치는 조작과 매체</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-08.html" aria-current="page">장 처음으로 →</a><ol>
+<li><a href="#s-1" data-sec="s-1">투영과 단면</a></li>
+<li><a href="#s-2" data-sec="s-2">축의 추가와 제거</a></li>
+<li><a href="#s-3" data-sec="s-3">단위의 분해와 재종합</a></li>
+<li><a href="#s-4" data-sec="s-4">시점의 이동</a></li>
+<li><a href="#s-5" data-sec="s-5">시간의 펼침</a></li>
+<li><a href="#s-6" data-sec="s-6">다섯 조작이 실패하는 곳</a></li>
+<li><a href="#s-7" data-sec="s-7">공교육으로 돌아오기</a></li>
+<li><a href="#s-8" data-sec="s-8">종이는 무엇을 접는가</a></li>
+<li><a href="#s-9" data-sec="s-9">무엇을 비교해야 하는가</a></li>
+<li><a href="#s-10" data-sec="s-10">정보를 같게 맞춘다는 것 — 사례 셋</a></li>
+<li><a href="#s-11" data-sec="s-11">도식은 누구의 시선인가</a></li>
+<li><a href="#s-12" data-sec="s-12">고차원을 정직하게 말하는 법</a></li>
+<li><a href="#s-13" data-sec="s-13">비교를 위한 설계</a></li>
+<li><a href="#s-14" data-sec="s-14">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">9장</span><span class="toc-title">계산되지 않는 것과 거리</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-09.html">장 처음으로 →</a><ol>
+<li><a href="chapter-09.html#s-1" data-sec="s-1">구경꾼에서 생존자로 — 유비의 무게</a></li>
+<li><a href="chapter-09.html#s-2" data-sec="s-2">언덕 위의 구경꾼</a></li>
+<li><a href="chapter-09.html#s-3" data-sec="s-3">어긋남의 네 가지 출처</a></li>
+<li><a href="chapter-09.html#s-4" data-sec="s-4">교실 창문 앞에서</a></li>
+<li><a href="chapter-09.html#s-5" data-sec="s-5">도구가 다시 대상이 될 때</a></li>
+<li><a href="chapter-09.html#s-6" data-sec="s-6">일곱 개의 자리</a></li>
+<li><a href="chapter-09.html#s-7" data-sec="s-7">손으로 돌리는 일은 계산을 바꾼다</a></li>
+<li><a href="chapter-09.html#s-8" data-sec="s-8">&#x27;외골격&#x27; 은유를 내려놓는 이유</a></li>
+<li><a href="chapter-09.html#s-9" data-sec="s-9">끊는 자리, 기록하는 자리</a></li>
+<li><a href="chapter-09.html#s-10" data-sec="s-10">책임은 어디에 남는가</a></li>
+<li><a href="chapter-09.html#s-11" data-sec="s-11">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">10장</span><span class="toc-title">교실 밖에서, 그리고 실행</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-10.html">장 처음으로 →</a><ol>
+<li><a href="chapter-10.html#s-1" data-sec="s-1">과학의 모형 — 상태공간은 공간이 아니다</a></li>
+<li><a href="chapter-10.html#s-2" data-sec="s-2">역사의 인식 — 묶는 규칙과 갈라지는 계통</a></li>
+<li><a href="chapter-10.html#s-3" data-sec="s-3">디자인과 건축 — 기하는 시험할 수 있다, 행동은 아니다</a></li>
+<li><a href="chapter-10.html#s-4" data-sec="s-4">인문사회 이론 — 관점의 배열로 남을 권리</a></li>
+<li><a href="chapter-10.html#s-5" data-sec="s-5">연구 글쓰기 — 근거 지도라는 개념공간</a></li>
+<li><a href="chapter-10.html#s-6" data-sec="s-6">계산이 판단을 대신하지 못하는 곳</a></li>
+<li><a href="chapter-10.html#s-7" data-sec="s-7">실행에는 층이 있다</a></li>
+<li><a href="chapter-10.html#s-8" data-sec="s-8">초고의 예를 다시 보기</a></li>
+<li><a href="chapter-10.html#s-9" data-sec="s-9">적용을 위한 실행의 조건</a></li>
+<li><a href="chapter-10.html#s-10" data-sec="s-10">이름에 대하여</a></li>
+<li><a href="chapter-10.html#s-11" data-sec="s-11">포스트언어라는 전망에 대하여</a></li>
+<li><a href="chapter-10.html#s-12" data-sec="s-12">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">결</span><span class="toc-title">계산하는 개념공간</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="conclusion.html">장 처음으로 →</a><ol>
+<li><a href="conclusion.html#s-1" data-sec="s-1">확인한 것</a></li>
+<li><a href="conclusion.html#s-2" data-sec="s-2">가정한 것</a></li>
+<li><a href="conclusion.html#s-3" data-sec="s-3">제안한 것</a></li>
+<li><a href="conclusion.html#s-4" data-sec="s-4">아직 하지 않은 것</a></li>
+<li><a href="conclusion.html#s-5" data-sec="s-5">새로운 사유의 단위라는 말에 대하여</a></li>
+<li><a href="conclusion.html#s-6" data-sec="s-6">접힌 문장으로 돌아가며</a></li>
+</ol></details></li>
+<li class="toc-part" aria-hidden="true">부록</li>
+<li><details class="toc-group"><summary><span class="toc-label">부록 1</span><span class="toc-title">사례 읽기 안내</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="appendix-1.html">장 처음으로 →</a><ol>
+<li><a href="appendix-1.html#s-1" data-sec="s-1">네트워크가 없을 때</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">부록 2</span><span class="toc-title">공교육 실뜨기의 입력 기록</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="appendix-2.html">장 처음으로 →</a><ol>
+<li><a href="appendix-2.html#s-1" data-sec="s-1">관점을 하나씩 더한 열네 단계</a></li>
+<li><a href="appendix-2.html#s-2" data-sec="s-2">관점마다 따로 요청한 정의</a></li>
+<li><a href="appendix-2.html#s-3" data-sec="s-3">네 대상을 장치 자리에 넣은 분석</a></li>
+<li><a href="appendix-2.html#s-4" data-sec="s-4">이 기록에 없는 것</a></li>
+</ol></details></li>
+</ol></nav>
+</details></aside>
+<article class="chapter" id="chapter-08">
+<header class="chapter-head"><p class="eyebrow">3부 · 8장</p><h1>접고 펼치는 조작과 매체</h1></header>
+<p>1부에서 공간과 그 안의 것의 관계가 바뀌어 온 길을, 2부에서 개념공간과 그 축이 계산될 때를 보았습니다. 3부는 계산하는 개념공간을 생각의 도구로 쓰는 법을 묻습니다. 먼저 손을 움직여 봅니다.</p>
+<p>차원을 다루는 일은 대개 다섯 가지 조작 가운데 하나입니다. <strong>투영과 단면</strong>, <strong>축의 추가와 제거</strong>, <strong>단위의 분해와 재종합</strong>, <strong>시점의 이동</strong>, <strong>시간의 펼침</strong>. 이 장의 앞부분은 각 조작을 이 책에 연결된 사례로 돌려 보고, 그 조작이 언제 새로운 구별을 만들고 언제 실패하는지를 적습니다. 뒷부분은 그 조작들이 놓이는 매체, 곧 종이와 화면을 다룹니다.</p>
+<p>주요 사례는 같은 형식을 따릅니다. 먼저 인쇄된 도판만 보고 답할 수 있는 <strong>질문</strong>을 던지고, 웹 페이지에서 무엇을 움직여 보라는 <strong>조작</strong>을 적고, 네트워크가 없을 때를 위해 그 조작이 보여 주는 것을 말로 풀어 쓴 <strong>설명</strong>을 붙이고, 마지막으로 그 사례가 보여 주지 <strong>않는</strong> 것을 적습니다. 짧게 다룬 사례에는 설명과 한계만 적었습니다. 모든 사례 페이지는 단순화된 모형이며, 이 페이지들을 조작하는 일이 이해를 돕는지는 아직 재지 않았습니다. 사례 주소 앞부분은 climtc.github.io/teaching-learning-perspectives/ 입니다.</p>
+<h2 id="s-1">1. 투영과 단면</h2>
+<h3 id="s-1-1">사례: 원근법 — 눈과 그림 평면</h3>
+<p><strong>질문.</strong> 화가가 그림 앞에 서서 정육면체를 그립니다. 눈을 그림에서 멀리 떨어뜨리면 그림 속 정육면체의 앞면과 뒷면 크기 차이는 어떻게 변할까요.</p>
+<p><strong>조작.</strong> 투영 규칙을 '중심 투영'과 '평행 투영' 사이에서 바꾸고, 눈과 그림 평면 사이의 거리, 눈의 좌우 위치를 움직여 보세요. 투영선을 켜면 정육면체의 각 꼭짓점에서 눈으로 가는 선이 그림 평면을 어디에서 지나는지 보입니다.</p>
+<p><strong>설명.</strong> 중심 투영에서는 모든 투영선이 한 점, 곧 눈으로 모입니다. 눈이 가까우면 앞면과 뒷면의 크기 차이가 커지고, 눈이 멀어질수록 그 차이가 줄어 평행 투영에 가까워집니다. 그림 평면 위의 상은 정육면체의 깊이를 크기의 차이로 접어 넣은 결과입니다. 중요한 것은 이 접기가 되돌릴 수 없다는 점입니다. 같은 그림을 만드는 입체는 무수히 많습니다. 큰 물체가 멀리 있어도, 작은 물체가 가까이 있어도 같은 크기로 그려질 수 있기 때문입니다. 페이지 왼쪽의 뒤러 목판화는 화가가 실과 틀로 이 투영을 실제로 수행하던 장면입니다.</p>
+<p><strong>한계.</strong> 이 페이지는 원근법 교본의 절차나 르네상스 작업실을 복원한 것이 아닙니다. 원근법 학습의 효과도 보여 주지 않습니다.</p>
+<h3 id="s-1-2">사례: 플랫랜드의 단면</h3>
+<p><strong>질문.</strong> 공 하나가 평면을 위에서 아래로 통과합니다. 평면에 사는 존재에게 그 공은 어떻게 보일까요.</p>
+<p><strong>조작.</strong> 구의 중심 높이를 −1.5R에서 1.5R까지 움직이거나 재생을 눌러 보세요. '구 전체 표시'를 끄고 켜며, 평면에 남는 단면(원)과 구 전체를 견주어 보세요.</p>
+<figure class="ifig" id="fig-8-1"><figcaption class="ifig-bar"><span class="ifig-no">그림 8-1</span><span class="ifig-title">플랫랜드의 단면</span></figcaption><div class="ifig-frame"><iframe id="fig-8-1-frame" src="https://climtc.github.io/teaching-learning-perspectives/models/flatland-slices.html" title="그림 8-1 플랫랜드의 단면 조작 모형" loading="lazy" allow="fullscreen" referrerpolicy="no-referrer" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"></iframe></div><div class="ifig-act"><button type="button" class="ifig-fs" data-target="fig-8-1-frame" data-fallback="https://climtc.github.io/teaching-learning-perspectives/models/flatland-slices.html">전체 화면</button><a href="https://climtc.github.io/teaching-learning-perspectives/models/flatland-slices.html" target="_blank" rel="noopener">모형 크게 열기<span class="sr-only"> (새 창)</span></a><a href="https://climtc.github.io/teaching-learning-perspectives/flatland-slices.html" target="_blank" rel="noopener">해설과 출처 보기<span class="sr-only"> (새 창)</span></a></div><div class="ifig-cap"><p>구의 중심 높이를 바꾸거나 재생을 눌러, 같은 크기의 구가 평면을 지나는 동안 평면에 보이는 원이 어떻게 생기고 커지고 사라지는지 보세요. '구 전체 표시'를 끄면 평면에 남는 단면만, 켜면 구 전체가 함께 보여 둘을 견줄 수 있습니다. '평면 위에서 보기'는 위에서 내려다보는 바깥의 시점입니다. 한 장의 단면만으로는 대상을 되살릴 수 없다는 것을 보여 줄 뿐, 평면 주민의 지각을 시뮬레이션하지는 않습니다.</p><p class="ifig-url">조작 모형: https://climtc.github.io/teaching-learning-perspectives/models/flatland-slices.html<br>해설과 출처: https://climtc.github.io/teaching-learning-perspectives/flatland-slices.html</p></div></figure>
+<p><strong>설명.</strong> 단면의 반지름은 구의 중심이 평면에서 얼마나 떨어져 있느냐에 따라 0에서 커졌다가 다시 0으로 줄어듭니다. 평면의 주민에게 공은 점으로 나타나 커지는 원이 되었다가 다시 점으로 사라지는 사건입니다. 반면 그림자는 늘 같은 크기입니다(그림자는 화면에 따로 표시되지 않습니다). <strong>단면과 그림자는 서로 다른 접기입니다.</strong> 단면은 한 높이에서의 정확한 정보를 주지만 나머지 높이를 버리고, 그림자는 모든 높이를 한꺼번에 눌러 담지만 높이의 정보를 버립니다. 어느 단면 하나로도 구 전체를 복원할 수 없습니다.</p>
+<p><strong>한계.</strong> 평면 주민의 지각을 시뮬레이션하지 않습니다. 그리고 이 사례에서 차원을 높인 시점, 곧 공 전체를 보는 시점이 언제나 더 우월하다는 결론이 나오지는 않습니다. 공 전체를 보는 시점도 하나의 시점이며, 그 시점에서 보이지 않는 것이 따로 있습니다.</p>
+<h3 id="s-1-3">이 조작이 만드는 구별</h3>
+<p>투영과 단면은 정보를 버리는 조작입니다. 이 조작이 새로운 구별을 만드는 것은 <strong>무엇을 버렸는지가 밝혀질 때</strong>입니다. 같은 대상에서 서로 다른 것을 버린 두 표현을 나란히 놓으면, 각자가 버린 것이 상대 표현에서 드러납니다. 9장에서 다룰 '투영이 다르다'는 어긋남이 바로 이것입니다. 반대로 하나의 투영만 있고 그것이 무엇을 버렸는지를 말하지 않으면, 우리는 그림을 대상으로 착각합니다.</p>
+<p>세잔과 큐비즘에 관한 사례는 이 점을 다른 방향에서 보여 줍니다. 하나의 지형을 세 방향에서 투영한 면들을 하나의 평면에 다시 배치하면, 한 장의 그림 안에 여러 시점이 공존합니다. 평면이라는 매체가 반드시 하나의 시점만 담는 것은 아니라는 뜻입니다. 이 사례는 세잔이나 큐비스트들이 실제로 그렇게 작업했다는 미술사적 주장이 아니라, 평면에 여러 시점을 재배치하는 조작이 가능하다는 것을 보여 줄 뿐입니다. 이 장 뒷부분에서 종이의 한계를 이야기할 때 이 점을 다시 쓰겠습니다.</p>
+<h2 id="s-2">2. 축의 추가와 제거</h2>
+<h3 id="s-2-1">사례: 심슨의 역설 — 합계가 감춘 집단</h3>
+<p><strong>질문.</strong> 두 교수법 A와 B를 비교합니다. 전체 성공률은 B가 더 높습니다. 그렇다면 B가 더 나은 교수법일까요.</p>
+<p><strong>조작.</strong> '표본 구성 차이'를 움직여 보세요. 이 값은 두 교수법이 쉬운 과제와 어려운 과제를 얼마나 다른 비율로 맡았는지를 나타냅니다. 그런 다음 '집단 축 펼치기'를 켜서 과제의 난이도별로 성공률을 나누어 보세요.</p>
+<p><strong>설명.</strong> 이 사례는 과제 난이도별 성공률을 고정해 둡니다. 쉬운 과제에서 A는 0.9, B는 0.8이고, 어려운 과제에서 A는 0.3, B는 0.2입니다. 난이도별로 보면 A가 늘 0.1씩 높습니다. 그런데 B가 쉬운 과제를 더 많이 맡을수록 B의 합계 성공률이 올라가고, 표본 구성의 차이가 일정 값(이 사례에서는 5/24)을 넘으면 합계에서는 B가 A를 앞지릅니다. 난이도라는 축을 지우고 합계 하나로 보면 판단이 뒤집힙니다. 축을 되살리면 다시 바로 섭니다.</p>
+<p><strong>한계.</strong> 이 사례는 인과 효과를 추정하지 않습니다. 난이도 축을 펼친다고 해서 모든 편향이 사라지는 것도 아닙니다. 어떤 축을 펼쳐야 하는지는 자료가 아니라 자료가 만들어진 과정에 대한 지식이 알려 줍니다. 페이지도 인과적 편향이 자동으로 해결되지 않는다고 적어 둡니다. 수치는 가상값입니다.</p>
+<h3 id="s-2-2">사례: 국가 지표 — 시간축을 펼치기</h3>
+<p><strong>질문.</strong> 한 해의 소득과 기대수명을 점으로 찍은 그림에서, 두 나라가 같은 자리에 있다면 두 나라는 같은 상황일까요.</p>
+<p><strong>조작.</strong> 1990년부터 2010년까지 연도를 움직여 보세요. 그런 다음 연도를 세 번째 축으로 세워, 각 나라가 지나온 경로를 보세요.</p>
+<p><strong>설명.</strong> 이 사례는 갭마인더의 고정 판본 자료에서 12개국의 실제 수치를 씁니다. 한 해의 단면에서는 같은 자리에 있는 두 나라가, 시간축을 세우면 서로 다른 방향에서 그 자리로 들어왔다는 것이 드러날 수 있습니다. 하나는 올라가는 중이고 다른 하나는 내려가는 중일 수 있습니다. 같은 수치를 다른 축 배치로 보여 주었을 뿐인데 질문이 바뀝니다. '지금 어디 있는가'에서 '어디에서 와서 어디로 가는가'로.</p>
+<p><strong>한계.</strong> 이 사례는 나라 사이의 인과를 추론하지 않습니다. 쓰는 소득 지표는 구매력 평가 기준과 다릅니다.</p>
+<h3 id="s-2-3">이 조작이 만드는 구별</h3>
+<p>축을 되살리는 조작이 새 구별을 만드는 것은, 지금의 축들로는 같은 자리에 놓이는 대상들을 <strong>질문이 구별하라고 요구할 때</strong>입니다. 그리고 그 축이 무엇인지를 아는 것은 자료 밖의 지식입니다. 심슨의 역설에서 난이도 축을 펼쳐야 한다는 것을 아는 사람은 표본이 어떻게 배정되었는지를 아는 사람입니다. 축을 더하는 일은 기계적인 확장이 아니라, 대상이 만들어진 과정에 대한 판단입니다.</p>
+<p>9장에서 다룰 교실 창문 사례도 이 조작의 예입니다. 평면도에서 생략한 높이를 되살리자 '보인다/안 보인다'의 판정이 바뀌었습니다. 그러나 그 사례는 동시에 이 조작의 한계도 보여 주었습니다. 높이를 되살려도 시선은 대칭이었고, 비대칭은 기하의 축이 아니라 몸의 방향과 권한이라는 다른 종류의 차원에 있었습니다. 축을 하나 더한다고 문제가 풀리는 것이 아니라, 어떤 <strong>종류</strong>의 축을 더해야 하는지가 문제였던 것입니다.</p>
+<h2 id="s-3">3. 단위의 분해와 재종합</h2>
+<h3 id="s-3-1">사례: 역사는 언제 바뀌는가 — 하나의 시대선과 여러 계열</h3>
+<p><strong>질문.</strong> 17세기 후반부터 18세기 중반까지 출판된 다섯 권의 책이 있습니다. 이 책들은 하나의 '시대'에 속할까요, 서로 다른 흐름에 속할까요.</p>
+<p><strong>조작.</strong> 책들을 묶는 기준을 '분야별 계열', '공통 시대 경계', '개별 문헌' 세 가지 사이에서 바꾸어 보세요. 공통 경계 연도를 움직여 보세요.</p>
+<p><strong>설명.</strong> 다섯 출판 기록(1660~1758)은 그대로인데, 묶는 기준을 바꾸면 그림이 완전히 달라집니다. 공통 시대 경계로 묶으면 하나의 선이 어느 해에 꺾이는 듯 보이고, 분야별 계열로 묶으면 분야마다 다른 리듬으로 출판이 이어지는 여러 선이 보입니다. 미셸 푸코는 『지식의 고고학』 서론에서 역사학이 하나의 거대한 연속성 대신 여러 계열과 불연속을 다루게 된 변화를 말합니다.<sup class="fnref"><a href="#fn-3-1" id="ref-3-1">1</a></sup> 이 사례는 그 변화를 단위 선택의 조작으로 옮겨 놓은 것입니다. 역사적 단위는 미리 정해져 있지 않고, 묶는 규칙이 그림을 만듭니다.</p>
+<p><strong>한계.</strong> 다섯 권은 지식 전체의 대표 표본이 아닙니다. 이 사례는 책들 사이의 영향 관계나 동시적 전환을 입증하지 않습니다.</p>
+<h3 id="s-3-2">사례: 같은 해, 다른 시간 — 사건·국면·장기 지속</h3>
+<p><strong>질문.</strong> 1815년에 일어난 일을 하루 단위로 볼 때와 수십 년 단위로 볼 때, 무엇이 남고 무엇이 사라질까요.</p>
+<p><strong>조작.</strong> 시간 창의 폭을 며칠에서 수십 년까지 넓혀 보고, 집계 단위를 일·월·년·10년으로 바꾸어 보세요.</p>
+<p><strong>설명.</strong> 이 사례는 1815년의 다섯 사건(실제 날짜)과, 페르낭 브로델이 말한 물가의 국면(수십 년 단위의 오르내림)을 같은 달력 위에 놓습니다. 창을 좁히면 사건들이 하루하루의 간격으로 또렷이 구별되지만 국면은 보이지 않습니다. 창을 넓히면 국면의 오르내림이 보이지만 사건들은 한 점으로 뭉개집니다. 시간을 담는 칸의 크기를 바꾸는 것은 시간의 '차원'을 더하는 것이 아니라 <strong>시간의 단위</strong>를 바꾸는 것입니다. 4장에서 말했듯, 세 개의 시간 척도를 '세 개의 차원'이라고 부르는 것은 비유입니다.</p>
+<p><strong>한계.</strong> 연도별 가격 곡선을 보여 주지 않으며, 사건이 국면을 일으켰다는 주장도 하지 않습니다.</p>
+<h3 id="s-3-3">사례: 함수의 합성 — 입력, 중간값, 출력</h3>
+<p><strong>설명.</strong> 'x를 제곱한 뒤 b를 더하는 것'과 'x에 b를 더한 뒤 제곱하는 것'은 같은 두 조작을 다른 순서로 합친 것입니다. 입력과 출력만 보면 두 결과는 그냥 다른 두 곡선입니다. 중간값을 세 번째 축으로 세우면, 그 차이가 어느 단계에서 생기는지가 보입니다. 화살표 하나로 그린 '입력 → 출력' 도식에는 중간값이 접혀 있습니다.</p>
+<p><strong>한계.</strong> 세 축으로 그렸지만 세 개의 독립 변수가 이루는 공간은 아닙니다. 중간값은 입력에서 정해지기 때문입니다. 페이지도 이 점을 밝혀 둡니다. <a class="xref" href="chapter-04.html#s-5">4장 5절</a>의 셋째 조건(다른 축들의 조합이 아닌가)을 보여 주는 작은 예입니다.</p>
+<h3 id="s-3-4">이 조작이 만드는 구별</h3>
+<p>단위의 분해와 재종합은 <strong>무엇을 하나로 볼 것인가</strong>를 바꿉니다. 공교육 실뜨기에서 '공교육'이라는 하나의 단위를 끝까지 유지한 것이 문제의 일부였을 수 있습니다. 교육과정 문서와 교실의 하루와 학생의 12년은 서로 다른 시간 단위와 서로 다른 행위자 단위를 가집니다. 그것들을 하나의 '공교육'으로 묶으면, 각 단위에서만 보이는 차이가 지워집니다.</p>
+<h2 id="s-4">4. 시점의 이동</h2>
+<h3 id="s-4-1">사례: 가르치다와 배우다</h3>
+<p>이 사례는 제가 『가르치는 인공지능은 가능한가?』 16장에서 처음 쓴 생각을 조작 가능하게 만든 것입니다.<sup class="fnref"><a href="#fn-3-2" id="ref-3-2">2</a></sup></p>
+<p><strong>질문.</strong> '가르친 것'과 '배운 것'을 평면 위의 두 원으로 그리면 둘은 크게 겹쳐 보입니다. 그렇다면 가르친 것의 대부분이 배워진 것일까요.</p>
+<p><strong>조작.</strong> 두 원을 두 개의 구로 바꾸고, 시선의 방향을 0도에서 90도까지 돌려 보세요. 두 구의 중심 거리를 바꾸어 보세요. '학생의 시선', '교사의 시선' 버튼도 눌러 보세요.</p>
+<p><strong>설명.</strong> 이 사례는 두 개의 구를 어떤 방향에서 평면에 투영했을 때 보이는 겹침의 넓이와, 두 구가 실제로 공유하는 부피를 따로 계산합니다. 두 구가 꽤 떨어져 있어도, 두 중심을 잇는 방향으로 바라보면 투영된 두 원은 거의 완전히 겹칩니다. 반대로 옆에서 보면 거의 겹치지 않습니다. 평면 위의 겹침은 두 구의 관계가 아니라 <strong>바라보는 방향</strong>이 만든 것일 수 있습니다. 교사가 서 있는 자리에서 보면 가르친 것과 배운 것이 겹쳐 보이는 것은, 그 자리가 겹쳐 보이는 방향이기 때문일 수 있습니다.</p>
+<p><strong>한계.</strong> 부피와 넓이의 비율은 학습률도, 수업의 효과도 아닙니다. '학생의 시선', '교사의 시선'은 강연을 위해 정한 예시이지 측정한 값이 아닙니다. 페이지도 이 점을 밝혀 둡니다. 이 사례가 보여 주는 것은 '겹쳐 보인다'와 '실제로 공유한다'를 구별해야 한다는 논리이지, 가르침과 배움의 실제 관계가 아닙니다.</p>
+<h3 id="s-4-2">사례: 시선의 주인 — 도식이 고른 관점</h3>
+<p><strong>설명.</strong> 교사·학습자·도구·과제라는 네 항을 가정된 좌표의 사면체 꼭짓점에 놓고, 분석의 초점이 되는 세 항을 고른 뒤 어떤 방향의 평면에 투영하거나 잘라 봅니다. 이 사례가 보여 주는 것은 두 가지 선택이 서로 다른 조작이라는 점입니다. <strong>무엇을 분석 단위로 고를 것인가</strong>(어느 세 항인가)와 <strong>어느 방향에서 볼 것인가</strong>(투영 방향). 같은 세 항을 골라도 보는 방향에 따라 삼각형의 모양이 바뀌고, 같은 방향에서 보아도 고른 항이 다르면 다른 그림이 나옵니다. 개념공간에서 '관점'이라는 말이 이 둘을 섞어 쓰면, 무엇을 바꾸었는지 기록할 수 없습니다.</p>
+<p><strong>한계.</strong> 실제 교육 활동이 사면체 모양이라거나 관점이 정해진 각도라는 측정이 아닙니다.</p>
+<h3 id="s-4-3">사례: 같은 기호, 다른 진술</h3>
+<p><strong>설명.</strong> 타자기 자판의 첫 줄 'AZERT'는 자판 위에 있을 때 그냥 글쇠의 배열이지만, 타자 교본에서 '프랑스어 타자기가 채택한 자판 순서'를 보여 주는 예로 쓰일 때는 하나의 진술이 됩니다. 푸코가 『지식의 고고학』에서 진술을 정의하며 든 예입니다.<sup class="fnref"><a href="#fn-3-3" id="ref-3-3">3</a></sup> 이 사례는 그 예와 '종은 진화한다'라는 문장이 다윈과 심프슨의 맥락에서 서로 다른 진술이 되는 예(뒤의 예는 사례 페이지의 해석입니다)를 함께 놓고, 사용 맥락과 분석 규모를 바꿀 때 진술의 수와 그 성립 조건이 어떻게 바뀌는지를 보여 줍니다. 의미가 기호 자체의 속성이 아니라 기호가 쓰이는 조건에 달려 있다는 점이, 시점의 이동을 텍스트에 적용한 예입니다.</p>
+<p><strong>한계.</strong> 진술의 참과 거짓을 판정하지 않습니다. 사례의 판정은 원전 해석을 미리 코드로 적어 둔 것이지, 계산이 진술을 찾아낸 것이 아닙니다.</p>
+<h3 id="s-4-4">이 조작이 만드는 구별</h3>
+<p>시점의 이동은 '보이는 것'이 대상의 성질인지 보는 자리의 성질인지를 가릅니다. 다만 4장에서 경고했듯, 화면 속 카메라를 돌리는 것은 분석자의 사회적 위치를 바꾸는 것이 아닙니다. 교사의 시선 버튼을 누른다고 교사의 경험을 갖게 되지는 않습니다. 시점 이동의 사례들은 '자리가 바뀌면 보이는 것이 바뀐다'는 논리를 보여 줄 뿐, 다른 자리의 사람이 실제로 무엇을 보는지는 그 사람에게 물어야 합니다.</p>
+<h2 id="s-5">5. 시간의 펼침</h2>
+<h3 id="s-5-1">사례: 바둑 — 미래 수순의 시간 층</h3>
+<p><strong>질문.</strong> 바둑 인공지능이 어떤 수를 가장 좋은 수로 추천했다면, 그 판단은 무엇에 기대고 있을까요.</p>
+<p><strong>조작.</strong> 처음 몇 수를 둔 판에서 인공지능이 추천한 세 후보 가운데 하나를 고르고, 그 뒤의 수순을 200수까지 펼쳐 보세요. 각 수를 투명한 층으로 쌓아 시간을 위로 세워 보고, 세 후보의 미래를 나란히 놓아 보세요.</p>
+<p><strong>설명.</strong> 이 사례는 공개 바둑 엔진(KataGo)으로 실제 분석한 결과를 저장해 보여 줍니다. 하나의 포석에서 상위 세 후보를 고르고, 각 후보 뒤에서 엔진이 매 수마다 다시 분석해 고른 수를 이어 붙여, 각 후보가 열어 갈 조건부 미래를 만들었습니다. 한 수의 추천은 그 뒤 수백 수의 가능한 경로에 대한 평가를 접어 놓은 것입니다. 시간을 층으로 펼치면 그 접힘이 드러납니다. 비슷해 보이던 두 후보가 30수 뒤에는 전혀 다른 판으로 갈라지는 것이 보일 수도 있습니다.</p>
+<p><strong>한계.</strong> 엔진의 승률과 방문 수는 사람이 다음에 둘 수의 확률이 아닙니다. 탐색 횟수는 제한되어 있고, 실시간 추론이 아니라 저장된 결과입니다. 그리고 <strong>시간의 층은 공간의 차원이 아닙니다.</strong> 200개의 층을 쌓았다고 200차원이 생긴 것이 아닙니다.</p>
+<h3 id="s-5-2">사례: 시간지리학 — 만날 수 있는 공간과 시간</h3>
+<p><strong>설명.</strong> 지도에서 가까운 두 사람이 실제로 만날 수 있을까요. 지리학자 토르스텐 해거스트란드가 시작한 시간지리학의 생각을 빌린 이 사례는 두 사람의 하루 일정과 이동 속도의 상한으로 각자가 도달할 수 있는 시공간의 영역(프리즘)을 계산하고, 두 영역이 겹치는 곳만이 만남이 가능한 곳임을 보여 줍니다. 시설에 접근할 수 있는 시간, 원격 만남의 허용 여부를 바꾸면 만남의 가능성이 바뀝니다. 교육 관계를 사람과 사람을 잇는 선으로만 그릴 때, 그 선이 실제로 이어질 수 있는 시간과 접근의 조건이 생략됩니다.</p>
+<p><strong>한계.</strong> 만날 수 있다는 것은 실제로 만났다는 것도, 서로 이해했다는 것도 아닙니다.</p>
+<h3 id="s-5-3">이 조작이 만드는 구별</h3>
+<p>시간의 펼침은 한 순간의 판단이 그 뒤의 경로들을 어떻게 접어 담고 있는지를 드러냅니다. 공교육 실뜨기에서 '시간' 관점은 '교육은 변화한다'는 일반론으로 끝났습니다. 시간을 실제로 펼친다는 것은 '변한다'고 말하는 것이 아니라, 어떤 단위로 어떤 창을 열어 무엇을 비교할지를 정하는 일입니다.</p>
+<h2 id="s-6">6. 다섯 조작이 실패하는 곳</h2>
+<div class="table-wrap" tabindex="0"><table><thead><tr><th scope="col">조작</th><th scope="col">새 구별을 만드는 조건</th><th scope="col">실패하는 경우</th><th scope="col">증명하지 않는 것</th></tr></thead><tbody><tr><td>투영과 단면</td><td>무엇을 버렸는지 밝히고, 다른 것을 버린 표현과 나란히 놓을 때</td><td>하나의 투영만 보고 버린 것을 말하지 않음</td><td>더 높은 차원의 시점이 늘 우월하다는 것</td></tr><tr><td>축의 추가와 제거</td><td>질문이 지금 구별하지 못하는 대상들을 구별하라고 요구하고, 그 축을 자료 밖의 지식이 알려 줄 때</td><td>중복된 축, 잘못된 종류의 축, 임의의 가중치</td><td>축을 펼치면 편향이 사라진다는 것</td></tr><tr><td>단위의 분해와 재종합</td><td>묶는 규칙을 바꾸었을 때 그림이 바뀌고, 그 규칙이 기록될 때</td><td>하나의 단위를 끝까지 유지하거나, 규칙 없이 쪼갬</td><td>어떤 단위가 유일하게 옳다는 것</td></tr><tr><td>시점의 이동</td><td>보이는 것이 대상의 성질인지 자리의 성질인지 가릴 때</td><td>화면 속 카메라 이동을 사회적 위치의 이동으로 착각</td><td>다른 자리의 사람이 실제로 보는 것</td></tr><tr><td>시간의 펼침</td><td>단위와 창을 정해 경로를 비교할 때</td><td>'변화한다'는 일반론으로 끝남, 시간 층을 공간 차원으로 셈</td><td>미래의 실제 경로, 인과</td></tr></tbody></table></div>
+<p>이 표에서 공통으로 보이는 것이 있습니다. 다섯 조작 모두 <strong>무엇을 바꾸었는지를 기록할 때만</strong> 새로운 구별을 만듭니다. 투영 방향, 펼친 축, 묶는 규칙, 고른 시점, 연 시간 창. 이것들을 기록하지 않으면 조작은 그림을 바꿀 뿐 생각을 바꾸지 않습니다. 저는 차원을 늘리고 줄일 때마다 무엇을 보존하고 무엇을 생략했는지 기록하자고 제안합니다. 이 장의 사례들은 그 제안이 왜 필요한지를 하나씩 보여 줍니다.</p>
+<h2 id="s-7">7. 공교육으로 돌아오기</h2>
+<p>이 다섯 조작을 공교육 실뜨기의 대상 하나에 적용해 보겠습니다. 국가 수준 교육과정입니다. 2025년의 생성문은 교육과정을 "표준화된 영혼의 설계도"라고 부르며 열두 관점을 차례로 적용했습니다. 다섯 조작으로 다시 보면, 그 분석이 묻지 않은 질문들이 나옵니다. 여기서는 답하지 않고 질문만 적습니다. 답하려면 자료가 필요하기 때문입니다.</p>
+<ul><li><strong>투영과 단면</strong>: 교육과정 문서는 무엇을 버린 표현인가. 문서에 적힌 성취기준과 실제 수업 시간 배당과 교실의 수업은 같은 교육과정의 서로 다른 단면이다. 어느 단면에서 본 교육과정을 비판하고 있는가.</li><li><strong>축의 추가와 제거</strong>: 교육과정 개정을 '경직되었다/유연해졌다'의 한 축으로 평가할 때, 지워진 축은 무엇인가. 예를 들어 지역 간 학교 여건의 차이라는 축을 펼치면 같은 교육과정이 다른 결과를 낳는다는 판단이 나올 수 있는가.</li><li><strong>단위의 분해와 재종합</strong>: '국가 수준 교육과정'은 하나의 단위인가. 총론과 교과별 각론, 개정 시기별 문서, 학교 교육과정으로 나누면 어떤 차이가 보이는가.</li><li><strong>시점의 이동</strong>: 정책 입안자, 교과서 집필자, 교사, 학생의 자리에서 교육과정은 각각 무엇으로 보이는가. 그 자리의 사람들에게 실제로 물어보았는가.</li><li><strong>시간의 펼침</strong>: 고시 연도를 축으로 세우면 어떤 변화의 경로가 보이는가. 그 경로를 연 단위로 볼 때와 수십 년 단위로 볼 때 무엇이 달라지는가.</li></ul>
+<p>공교육 실뜨기의 분석은 이 질문들 대신 결론을 내렸습니다. 이 장의 조작들은 결론 대신 질문을 남깁니다. 이 차이가 매끄러운 종합과 기록된 어긋남 사이의 차이입니다.</p>
+<h2 id="s-8">8. 종이는 무엇을 접는가</h2>
+<p>종이책이 한 줄로 이어지는 문장을 담는 것은 사실입니다. 그러나 종이는 문장만 담지 않습니다. 표, 지도, 도해, 수식, 각주, 색인, 여백의 메모는 종이 위에서 여러 방향으로 읽힙니다. 공학 도면은 정면도·평면도·측면도를 한 장에 나란히 놓아 입체를 전합니다. 화학자는 종이 위에 쐐기와 점선으로 결합의 앞뒤를 표시해, 평면 위에서 분자의 입체적인 손잡이 방향(오른손형인지 왼손형인지)을 구별합니다. 이 장 1절의 세잔과 큐비즘 사례가 보여 주듯, 한 장의 평면에 여러 시점을 재배치할 수도 있습니다.</p>
+<p>언어의 선형성도 조심해서 말해야 합니다. 소쉬르가 말한 기표의 선형성은 무엇보다 귀로 듣는 말소리가 시간 속에서 한 줄로 이어진다는 원리였습니다. 그리고 말과 글의 <strong>신호</strong>가 순서대로 나온다는 것과, 그 신호가 가리키는 <strong>의미의 구조</strong>가 1차원이라는 것은 다른 문제입니다. 한 줄로 이어진 문장이 그물 같은 관계를 기술할 수 있다는 것은, 이 문단이 지금 하고 있는 일이기도 합니다. 물론 비용이 듭니다. 한 줄로 풀어 놓은 그물은 독자가 다시 짜야 합니다. 그 비용이 2025년 초고가 느낀 한계의 실체였다고 생각합니다. 그러나 비용이 크다는 것과 불가능하다는 것은 다릅니다.</p>
+<p>저는 매체의 한계를 세 종류로 나누어 쓰자고 제안합니다. 증명으로 확인되는 원리적 한계, 판면의 크기나 문자열의 순서 같은 실용적·기술적 한계, 그리고 제도와 담론이 만드는 한계입니다. 기술적 한계를 원리적 한계로 부풀리지 말고, 종이에서 디지털로, 디지털에서 그다음으로 가는 직선적 진행을 검증 없이 전제하지 말자는 것입니다. 2025년 초고의 두 문장은 이 규칙을 어겼습니다. 종이의 실용적 한계를 사유 방식의 원리적 결정으로 부풀렸고, 종이에서 인공지능으로 가는 사다리를 전제했습니다.</p>
+<p>반대 방향도 경계해야 합니다. 디지털 화면도 평면입니다. 화면이 늘리는 것은 매체의 차원이 아니라, 독자가 스스로 정하고 바꿀 수 있는 값의 수입니다. 그리고 화면도 크기와 해상도, 스크롤과 클릭의 설계, 접근 권한과 비용, 기기와 연결의 불평등이라는 제약을 받습니다. 종이가 선형이고 화면이 다차원이라는 대비는 둘 다를 잘못 그립니다.</p>
+<h2 id="s-9">9. 무엇을 비교해야 하는가</h2>
+<p>정지된 표현과 움직이는 표현 가운데 어느 것이 나은가를 물을 때, 실제로는 네 가지가 섞여 있습니다.</p>
+<ol><li><strong>표현된 공간의 차원 수</strong>: 그림이 2차원 평면인가, 3차원 입체를 그리는가.</li><li><strong>표시되는 변수의 수</strong>: 한 그림에 몇 개의 값이 함께 표시되는가.</li><li><strong>정보량</strong>: 그 표현에서 원리적으로 읽어 낼 수 있는 내용이 얼마인가.</li><li><strong>사용자 조작</strong>: 독자가 무엇을 바꿀 수 있는가(시점, 단면, 시간, 매개변수).</li></ol>
+<p>이 넷은 따로 움직입니다. 3차원을 그린 정지 그림이 2차원 다중 시점 그림보다 정보가 적을 수 있고, 조작 가능한 그림이 조작할 수 있는 값은 하나뿐일 수도 있습니다. '3D가 더 낫다'는 주장은 이 넷 가운데 무엇이 차이를 만들었는지를 말하지 않으면 확인할 수 없습니다.</p>
+<p>메리 헤가티는 시각-공간 표현의 인지과학을 정리하며, 라킨과 사이먼이 제안한 구별을 출발점으로 삼았습니다. 두 표현이 같은 정보를 담고 있어도(정보적 동등성), 그 정보에서 답을 끌어내는 데 드는 계산은 크게 다를 수 있다는 것입니다(계산적 동등성의 부재).<sup class="fnref"><a href="#fn-6-2" id="ref-6-2">4</a></sup> 이 구별은 이 장의 비교에 그대로 쓰입니다. 정보를 같게 맞춘 뒤에야, 남은 차이가 계산의 차이인지 물을 수 있습니다. 헤가티는 또 3차원 표현이나 사실적 표현이 언제나 더 나은 것은 아니고, 상호작용을 제공해도 사람들이 그것을 효과적으로 쓰지 않는 경우가 많다는 연구들을 함께 정리합니다.</p>
+<p>이 구별에 따라 다섯 가지 표현 방식을 나란히 놓으면 다음과 같습니다. 각 칸은 설계상의 가능성과 비용이며, 효과가 확인된 것이 아닙니다.</p>
+<div class="table-wrap" tabindex="0"><table><thead><tr><th scope="col">표현 방식</th><th scope="col">설계상 드러내기 쉬운 것</th><th scope="col">설계상 숨기기 쉬운 것</th><th scope="col">독자가 치르는 비용</th></tr></thead><tbody><tr><td>정적 2D 한 장</td><td>하나의 투영에서의 관계, 전체의 한눈 보기</td><td>버린 축, 깊이, 다른 시점</td><td>버린 것을 스스로 복원</td></tr><tr><td>여러 고정 시점(정면·측면·평면)</td><td>시점별 차이, 각 투영이 버린 것의 상호 보완</td><td>시점 사이의 연속적 변화</td><td>머릿속에서 시점들을 합치기</td></tr><tr><td>정적 3D 한 장</td><td>깊이의 단서, 입체의 인상</td><td>가려진 면, 원근에 따른 크기 왜곡</td><td>가려진 것 추론</td></tr><tr><td>조작 가능한 3D</td><td>시점 변화에 따른 관계의 변화, 가려진 면</td><td>조작하지 않은 시점, 조작 이력</td><td>무엇을 조작할지 결정, 조작 기억</td></tr><tr><td>시간·조건 변화</td><td>경로, 갈림, 조건에 따른 변화</td><td>특정 순간의 세부, 재생하지 않은 구간</td><td>재생 속도와 순서 따라가기</td></tr></tbody></table></div>
+<h2 id="s-10">10. 정보를 같게 맞춘다는 것 — 사례 셋</h2>
+<h3 id="s-10-1">사례: 분자식과 분자구조 — 같은 식, 다른 분자</h3>
+<p><strong>설명.</strong> 이 사례는 퍼브켐(PubChem)의 3차원 계산 배치를 써서, 분자식이 같은데 구조가 다른 분자 세 쌍을 회전시켜 비교하게 합니다. 원자의 연결이 다른 구성 이성질체, 연결은 같고 공간 배치가 다른 기하 이성질체, 서로 거울상인 이성질체입니다. 분자식이라는 표현은 원자의 종류와 수만 담고 배치를 버립니다. 그래서 세 쌍은 분자식 수준에서 구별되지 않습니다. 구조식은 연결을 담고, 입체 표현은 배치를 담습니다. 거울상 쌍은 회전만으로는 서로 겹쳐지지 않으며, 사례는 그 손잡이 방향을 좌표의 행렬식 부호로 계산해 보여 줍니다.</p>
+<p>이 사례에서 중요한 것은 '3차원이라서' 구별이 생기는 것이 아니라는 점입니다. 거울상의 구별은 종이 위의 쐐기 표기로도 할 수 있습니다. 차이를 만드는 것은 <strong>그 표현이 어떤 정보를 담기로 했는가</strong>입니다. 분자식, 구조식, 쐐기 표기, 회전 가능한 입체 모형은 서로 다른 정보를 담고, 같은 정보를 담은 경우에도 그 정보를 읽어 내는 데 드는 계산이 다릅니다.</p>
+<p><strong>한계.</strong> 계산 배치 하나는 분자가 취할 수 있는 모든 상태가 아닙니다. 이성질화 반응을 보여 주지 않습니다.</p>
+<h3 id="s-10-2">사례: 단층촬영 — 같은 투영 뒤의 다른 내부</h3>
+<p><strong>설명.</strong> 이 사례는 내부의 작은 물체 사이 간격만 다른 두 가상 대상(팬텀)을 평행한 빛으로 투과한 그림자(투영)를 계산합니다. 어떤 방향에서는 두 대상의 그림자가 거의 같습니다. 투영 방향을 여러 개 모아 역으로 계산하면(여과 역투영), 한 단면의 내부가 재구성되고 두 대상의 차이가 드러납니다. 이 사례가 보여 주는 것은 <strong>차원을 늘리지 않고도 시점을 늘려 정보를 회복할 수 있다</strong>는 점입니다. 그림자 한 장은 내부를 정하지 못하지만, 충분히 많은 방향의 그림자들은 함께 내부를 정합니다. 2장에서 말한 '안에서 잰 것들의 맞음과 어긋남으로 형태를 아는 일'의 수학적 형태입니다.</p>
+<p><strong>한계.</strong> 실제 CT 장비나 진단의 정확도와는 무관합니다. 한 단면의 2차원 재구성이며, 3차원 원뿔 빛 촬영이 아닙니다.</p>
+<h3 id="s-10-3">사례: 메르카토르 지도 — 면적을 읽는 기준</h3>
+<p><strong>설명.</strong> 지구 표면에서 넓이가 같은 세 영역을 위도만 달리해 놓고, 메르카토르 도법과 원통 등적 도법으로 그린 넓이를 비교합니다. 메르카토르 도법에서는 고위도로 갈수록 넓이가 크게 부풀고(국소 배율이 위도의 시컨트 제곱에 비례), 등적 도법에서는 넓이가 보존되는 대신 모양이 일그러집니다. 어떤 도법도 구면을 평면에 펼치면서 무언가를 잃습니다. 메르카토르는 방향(각도)을 지키고 넓이를 버렸고, 등적 도법은 넓이를 지키고 모양을 버렸습니다. 항해에는 앞의 것이, 넓이 비교에는 뒤의 것이 맞습니다.</p>
+<p><strong>한계.</strong> 페이지는 이 지도가 독자를 실제로 편향시킨다는 심리적 효과를 입증하지 않는다고 적어 둡니다. 수학적 왜곡과, 그 왜곡 때문에 사람들이 실제로 잘못 판단한다는 것은 서로 다른 주장입니다. 앞의 것은 계산으로 확인되지만, 뒤의 것은 사람을 대상으로 한 연구가 필요합니다.</p>
+<p>이 세 사례에서 이 장의 구별 하나를 더 분명히 할 수 있습니다. <strong>수학적 정보 손실, 오해의 가능성에 대한 해석, 실증된 인지 편향</strong>은 세 가지 서로 다른 주장입니다. 메르카토르 지도가 넓이를 왜곡한다는 것은 첫째 주장이고 확인되었습니다. 그 때문에 사람들이 고위도 나라를 크게 여길 수 있다는 것은 둘째 주장이며 해석입니다. 실제로 그런 편향이 생긴다는 것은 셋째 주장이며 연구가 필요합니다. 2025년 초고는 이 셋을 자주 한 문장에 담았습니다.</p>
+<h2 id="s-11">11. 도식은 누구의 시선인가</h2>
+<p>정지된 도식이든 움직이는 모형이든, 모든 표현은 누군가가 고른 시선을 담고 있습니다. 어떤 축을 세울지, 어느 방향에서 투영할지, 무엇을 같은 대상으로 셀지, 독자에게 무엇을 조작하게 하고 무엇을 고정할지를 누군가 정했습니다. 이것을 '투영의 권력'이라고 부를 수 있습니다. 투영은 중립적인 창이 아니라, 무엇이 존재하는 것으로 보이고 무엇이 조작 가능한지를 바꾸는 연산입니다. 그리고 시스템이 부여한 안정적인 식별자가 실제로는 서로 다른 것을 같은 것으로 묶는 약속일 수 있다는 위험도 있습니다.</p>
+<p>'파놉티콘 — 중심의 시선과 보이지 않는 층' 사례는 이 점을 계산으로 보여 줍니다. 원형 감옥의 평면도에서 중앙의 감시자는 모든 칸을 볼 수 있는 것처럼 보입니다. 그러나 층과 바닥과 회랑을 입체로 되살리고, 관찰자의 높이와 거리에 따라 각 칸의 표적까지 이어지는 시선이 가려지는지를 계산하면, 평면도의 '중심'이 생략한 가려짐이 드러납니다. 이 사례도 교실 창문 사례처럼 2025년 초고를 강화하기보다 한정합니다. 광학적 가시성의 계산으로는 푸코의 논의를 입증하지도 반박하지도 못한다고 페이지 스스로 적고 있습니다. 감시의 권력은 기하만으로 성립하지 않습니다. 치수도 가정값입니다.</p>
+<figure class="ifig" id="fig-8-2"><figcaption class="ifig-bar"><span class="ifig-no">그림 8-2</span><span class="ifig-title">파놉티콘 — 중심의 시선과 보이지 않는 층</span></figcaption><div class="ifig-frame"><iframe id="fig-8-2-frame" src="https://climtc.github.io/teaching-learning-perspectives/models/panopticon-visibility.html" title="그림 8-2 파놉티콘 — 중심의 시선과 보이지 않는 층 조작 모형" loading="lazy" allow="fullscreen" referrerpolicy="no-referrer" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"></iframe></div><div class="ifig-act"><button type="button" class="ifig-fs" data-target="fig-8-2-frame" data-fallback="https://climtc.github.io/teaching-learning-perspectives/models/panopticon-visibility.html">전체 화면</button><a href="https://climtc.github.io/teaching-learning-perspectives/models/panopticon-visibility.html" target="_blank" rel="noopener">모형 크게 열기<span class="sr-only"> (새 창)</span></a><a href="https://climtc.github.io/teaching-learning-perspectives/panopticon-visibility.html" target="_blank" rel="noopener">해설과 출처 보기<span class="sr-only"> (새 창)</span></a></div><div class="ifig-cap"><p>관찰 높이와 중심에서의 거리와 관찰 각도를 바꾸고, 칸막이와 바닥·회랑을 넣고 빼며 시선이 어디까지 닿는지 보세요. 평면도에서는 중앙에서 모든 칸이 보이는 것 같지만, 층과 바닥을 되살리면 가려지는 곳이 생깁니다. 치수는 가정한 값이며, 이 광학 판정으로 푸코의 논의를 입증하거나 반박할 수는 없습니다.</p><p class="ifig-url">조작 모형: https://climtc.github.io/teaching-learning-perspectives/models/panopticon-visibility.html<br>해설과 출처: https://climtc.github.io/teaching-learning-perspectives/panopticon-visibility.html</p></div></figure>
+<p>그러므로 정지된 기호를 읽을 때도, 움직이는 모형을 조작할 때도, 네 가지를 함께 물어야 합니다. 이 표현이 드러내는 것과 숨기는 것은 무엇인가. 이 도식은 어느 시선을 전제하는가. 이 모형을 만든 사람(실험자)은 무엇을 조작 가능하게, 무엇을 고정되게 두었는가. 그리고 이 표현을 학교나 교과서에 놓을 권한은 누구에게 있는가.</p>
+<h2 id="s-12">12. 고차원을 정직하게 말하는 법</h2>
+<p>'고차원 표현'을 가장 강하게 허용할 수 있는 정의는 이렇게 쓸 수 있습니다. 많은 차원을 한 화면에 보여 주는 것이 아니라, 질문에 따라 부분적으로 투영하고, 서로 다른 투영 사이에서 같은 대상을 다시 알아보게 하고, 변환 규칙과 손실을 공개하고, 독자의 조작을 다시 기록하는 것. 이 정의는 이 책의 중심 제안과 같은 이야기를 매체의 언어로 한 것입니다. 거리는 여러 투영 사이의 어긋남을 기록하는 데서 생긴다는 제안을, 표현 설계의 네 조건으로 옮긴 것입니다.</p>
+<div class="table-wrap" tabindex="0"><table><thead><tr><th scope="col">고차원 표현의 조건</th><th scope="col">이 책의 중심 제안과의 대응</th></tr></thead><tbody><tr><td>질문에 따른 부분 투영</td><td>무엇을 축으로 고르고 무엇을 버렸는지 밝힌다(이 장 1~5절, 9장)</td></tr><tr><td>투영 사이의 같은 대상 재식별</td><td>서로 다른 표현이 같은 대상을 다루는지 확인한다(어긋남의 출처 '대상')</td></tr><tr><td>변환 규칙과 손실의 공개</td><td>투영이 버린 것을 기록한다(어긋남의 출처 '투영')</td></tr><tr><td>조작의 재기록</td><td>무엇을 바꾸었는지 남긴다(9장의 끊는 자리)</td></tr></tbody></table></div>
+<p>이 네 조건은 화면에서만 만족시킬 수 있는 것이 아닙니다. 종이 위에서도 정면도와 측면도에 같은 꼭짓점 번호를 붙이고, 도법의 이름과 왜곡의 크기를 캡션에 적고, 독자가 손으로 단면을 그려 넣을 칸을 남길 수 있습니다. 화면은 이 조건들을 더 싸게 만족시킬 수 있을 뿐입니다. 그리고 싸다는 것은 쓰인다는 것과 다릅니다.</p>
+<h2 id="s-13">13. 비교를 위한 설계</h2>
+<p>이 장의 질문, 곧 정적 2D, 여러 고정 시점, 정적 3D, 조작 가능한 3D, 시간·조건 변화 표현이 실제로 어떤 차이를 만드는가는 연구로만 답할 수 있습니다. 이 책과 함께 두 단계의 연구를 설계했습니다. 첫 단계는 사람을 대상으로 하기 전의 <strong>설계 연구</strong>입니다. 같은 대상을 다섯 방식으로 표현한 세트를 만들고, 각 표현이 담은 정보를 하나하나 감사해 정보를 맞추는 작업입니다. 둘째 단계는 그 표현 세트로 학습자의 판단을 비교하는 <strong>실증 연구</strong>입니다. 첫 단계가 끝나지 않으면 둘째 단계는 시작하지 않습니다. 정보가 다른 두 표현을 비교해 놓고 '차원의 효과'라고 부르는 일을 피하기 위해서입니다. 두 단계 모두 아직 실행하지 않았습니다.</p>
+<h2 id="s-14">14. 이 장의 제안과 가정</h2>
+<ul><li><strong>제안한 것</strong>: 다섯 조작의 분류와 각 조작의 성공·실패 조건, 표현을 비교할 때 따로 보아야 할 네 요인, 수학적 손실과 오해 가능성과 실증된 편향의 구별, 고차원 표현의 네 조건.</li><li><strong>가정한 것</strong>: 사례 대부분은 가상값이나 단순화된 모형을 쓴다. 다섯 표현 방식 표의 '드러내기 쉬운 것/숨기기 쉬운 것'은 설계상의 판단이다.</li></ul>
+<section class="notes" aria-label="주"><h2 class="notes-title">주</h2><ol>
+<li id="fn-3-1" value="1">Foucault, M. (1972). <em>The Archaeology of Knowledge</em> (A. M. Sheridan Smith, Trans.). Pantheon. 서론 3–17쪽, 특히 8–10쪽(계열과 불연속). 영역본 인쇄 쪽이며 프랑스어판·한국어판 쪽이 아니다. <a class="fnback" href="#ref-3-1" aria-label="본문으로 돌아가기">↩</a></li>
+<li id="fn-3-2" value="2">임완철(2020). 가르치는 인공지능은 가능한가?. 새물결. 179–187쪽(두 원·두 구의 착시, 차원증감법). <a class="fnback" href="#ref-3-2" aria-label="본문으로 돌아가기">↩</a></li>
+<li id="fn-3-3" value="3">Foucault, M. (1972). 같은 책, 진술의 정의 79–87쪽, AZERT의 예 86쪽. 영역본 인쇄 쪽. <a class="fnback" href="#ref-3-3" aria-label="본문으로 돌아가기">↩</a></li>
+<li id="fn-6-2" value="4">Hegarty, M. (2011). The cognitive science of visual-spatial displays: Implications for design. <em>Topics in Cognitive Science, 3</em>, 446–474. 정보적·계산적 동등성 p.447, 디스플레이가 인지를 돕는 방식 pp.450–453, 과제 특이성 pp.462–464, 상호작용과 효과적 사용 pp.455, 459, 468, 470, 3D·사실성 pp.455, 465, 467, 469. 이 논문은 공간 능력의 개인차를 다루지 않는다(본문 검색 결과). <a class="fnback" href="#ref-6-2" aria-label="본문으로 돌아가기">↩</a></li>
+</ol></section>
+<nav class="chapter-nav" aria-label="이전·다음 장"><a class="prev" href="chapter-07.html"><span>← 이전</span>7장. 언어모델에게 개념공간을 계산시켰을 때</a><a class="next" href="chapter-09.html"><span>다음 →</span>9장. 계산되지 않는 것과 거리</a></nav>
+</article>
+</div>
+</main>
+<footer class="site-footer"><div class="shell">
+<p class="cowork">이 원고와 이 원고에 연결된 상호작용 사례들은 제가 코덱스(Codex), 클로드(Claude)와 함께 작업한 결과물입니다.</p>
+<p>계산하는 공간 : 개념편 · 공개판 0.9 · 2026년 10월 11일 · 집필 중인 원고 · © 임완철</p>
+<p><a href="https://climtc.github.io/">연구 기록으로 돌아가기</a> · <a href="https://github.com/climtc/computing-space-concepts">GitHub 저장소 <span aria-hidden="true">↗</span></a></p>
+</div></footer>
+</body>
+</html>

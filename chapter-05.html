@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; frame-src https://climtc.github.io; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>5장. 축이 계산될 때 — 계산하는 공간 : 개념편</title>
+<meta name="description" content="4장에서 개념공간을 축들의 묶음과 그 값들 사이의 비교 구조를 함께 가진 구조로 정의했습니다. 개념 하나는 여러 축 위의 값으로 자리를 얻고, 비교 구조가 그 자리와 다른 개념들 사이의 가까움과 멂을 정합니다. 이 장은 이 책의 중심 질문으로 들어갑니다. 그 축들이 계">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%231f5147'/%3E%3Ctext x='20' y='29' text-anchor='middle' font-size='28' fill='white'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/book.css">
+<script src="assets/book.js" defer></script>
+</head>
+<body class="book-reading">
+<a class="skip" href="#reading-main">본문으로 건너뛰기</a>
+<header class="site-header"><div class="shell header-inner">
+<a class="brand" href="https://climtc.github.io/"><span class="brand-mark" aria-hidden="true">R<span>·</span></span><span>임완철<small>RESEARCH NOTES</small></span></a>
+<nav aria-label="주요 메뉴"><a href="https://climtc.github.io/#projects">연구 기록 <span aria-hidden="true">↗</span></a><a href="index.html#contents">차례</a><a href="full.html">한 페이지로 읽기</a></nav>
+</div></header>
+<main class="shell reading" id="reading-main">
+<div class="guide-layout">
+<aside class="toc-sidebar" id="book-toc"><details class="toc-mobile" open><summary>차례</summary>
+<a class="toc-home" href="index.html">계산하는 공간 : 개념편</a>
+<nav aria-label="원고 차례"><ol class="toc-list">
+<li><details class="toc-group"><summary><span class="toc-label">서</span><span class="toc-title">공간이 계산한다면</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="preface.html">장 처음으로 →</a><ol>
+<li><a href="preface.html#s-1" data-sec="s-1">이 책이 걷는 길</a></li>
+<li><a href="preface.html#s-2" data-sec="s-2">앞선 책들에서 가져온 것</a></li>
+<li><a href="preface.html#s-3" data-sec="s-3">공교육 실뜨기</a></li>
+<li><a href="preface.html#s-4" data-sec="s-4">이 책이 지키는 네 가지 구별</a></li>
+</ol></details></li>
+<li class="toc-part" aria-hidden="true">1부 · 담는 공간, 관계하는 공간, 계산하는 공간</li>
+<li><details class="toc-group"><summary><span class="toc-label">1장</span><span class="toc-title">담는 공간</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-01.html">장 처음으로 →</a><ol>
+<li><a href="chapter-01.html#s-1" data-sec="s-1">뉴턴의 절대공간</a></li>
+<li><a href="chapter-01.html#s-2" data-sec="s-2">라이프니츠의 반론</a></li>
+<li><a href="chapter-01.html#s-3" data-sec="s-3">칸트의 형식</a></li>
+<li><a href="chapter-01.html#s-4" data-sec="s-4">담는 공간이 가능하게 한 것</a></li>
+<li><a href="chapter-01.html#s-5" data-sec="s-5">담는 개념공간</a></li>
+<li><a href="chapter-01.html#s-6" data-sec="s-6">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">2장</span><span class="toc-title">관계하는 공간</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-02.html">장 처음으로 →</a><ol>
+<li><a href="chapter-02.html#s-1" data-sec="s-1">안에서 휘어짐을 아는 법</a></li>
+<li><a href="chapter-02.html#s-2" data-sec="s-2">리만 — 공간의 측도는 경험의 문제다</a></li>
+<li><a href="chapter-02.html#s-3" data-sec="s-3">민코프스키 — 공간과 시간의 결합</a></li>
+<li><a href="chapter-02.html#s-4" data-sec="s-4">아인슈타인 — 서로를 정하는 공간과 물질</a></li>
+<li><a href="chapter-02.html#s-5" data-sec="s-5">안에서 보는 은하</a></li>
+<li><a href="chapter-02.html#s-6" data-sec="s-6">관계하는 개념공간</a></li>
+<li><a href="chapter-02.html#s-7" data-sec="s-7">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">3장</span><span class="toc-title">계산하는 공간</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-03.html">장 처음으로 →</a><ol>
+<li><a href="chapter-03.html#s-1" data-sec="s-1">&#x27;공간이 계산한다&#x27;는 말의 약정</a></li>
+<li><a href="chapter-03.html#s-2" data-sec="s-2">언어가 계산 가능해진다는 것</a></li>
+<li><a href="chapter-03.html#s-3" data-sec="s-3">트랜스포머 안에서 일어나는 일</a></li>
+<li><a href="chapter-03.html#s-4" data-sec="s-4">같은 토큰, 다른 자리</a></li>
+<li><a href="chapter-03.html#s-5" data-sec="s-5">세 공간을 나란히 놓으면</a></li>
+<li><a href="chapter-03.html#s-6" data-sec="s-6">2025년의 &#x27;연속과 불연속&#x27; 다시 읽기</a></li>
+<li><a href="chapter-03.html#s-7" data-sec="s-7">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li class="toc-part" aria-hidden="true">2부 · 개념공간</li>
+<li><details class="toc-group"><summary><span class="toc-label">4장</span><span class="toc-title">축이 의미를 정하는 공간</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-04.html">장 처음으로 →</a><ol>
+<li><a href="chapter-04.html#s-1" data-sec="s-1">개념공간이란 무엇인가</a></li>
+<li><a href="chapter-04.html#s-2" data-sec="s-2">네 가지 개념공간</a></li>
+<li><a href="chapter-04.html#s-3" data-sec="s-3">모든 개념이 차원으로 표현되는가</a></li>
+<li><a href="chapter-04.html#s-4" data-sec="s-4">&#x27;차원&#x27;의 세 가지 쓰임</a></li>
+<li><a href="chapter-04.html#s-5" data-sec="s-5">관점이 축이 되는 조건</a></li>
+<li><a href="chapter-04.html#s-6" data-sec="s-6">축이 기저가 되는 조건</a></li>
+<li><a href="chapter-04.html#s-7" data-sec="s-7">축이 아닌 관계: 고리 셋</a></li>
+<li><a href="chapter-04.html#s-8" data-sec="s-8">개념공간의 네 층위</a></li>
+<li><a href="chapter-04.html#s-9" data-sec="s-9">차원을 더할 때와 뺄 때</a></li>
+<li><a href="chapter-04.html#s-10" data-sec="s-10">같은 낱말의 다른 뜻 — 곡률, 구경꾼, 위상</a></li>
+<li><a href="chapter-04.html#s-11" data-sec="s-11">다시 정의한 관점들</a></li>
+<li><a href="chapter-04.html#s-12" data-sec="s-12">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group" open><summary class="is-current"><span class="toc-label">5장</span><span class="toc-title">축이 계산될 때</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-05.html" aria-current="page">장 처음으로 →</a><ol>
+<li><a href="#s-1" data-sec="s-1">축이 계산의 대상이 될 때</a></li>
+<li><a href="#s-2" data-sec="s-2">축이 계산의 재료가 될 때</a></li>
+<li><a href="#s-3" data-sec="s-3">축이 변수가 될 때 — 계산하는 개념공간</a></li>
+<li><a href="#s-4" data-sec="s-4">세 경우를 나란히 놓으면</a></li>
+<li><a href="#s-5" data-sec="s-5">&#x27;기하학적 틀&#x27;은 고정된 무대인가</a></li>
+<li><a href="#s-6" data-sec="s-6">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">6장</span><span class="toc-title">공교육이라는 낱말의 여러 겹 — 공교육 실뜨기</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-06.html">장 처음으로 →</a><ol>
+<li><a href="chapter-06.html#s-1" data-sec="s-1">같은 낱말, 다른 강조</a></li>
+<li><a href="chapter-06.html#s-2" data-sec="s-2">의미의 여러 겹을 펼쳐 보이는 공간</a></li>
+<li><a href="chapter-06.html#s-3" data-sec="s-3">계산하는 개념공간을 건넨다는 것</a></li>
+<li><a href="chapter-06.html#s-4" data-sec="s-4">열네 단계의 길</a></li>
+<li><a href="chapter-06.html#s-5" data-sec="s-5">차원이 된 열네 개념</a></li>
+<li><a href="chapter-06.html#s-6" data-sec="s-6">네 대상을 장치의 자리에 넣어 보기</a></li>
+<li><a href="chapter-06.html#s-7" data-sec="s-7">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">7장</span><span class="toc-title">언어모델에게 개념공간을 계산시켰을 때</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-07.html">장 처음으로 →</a><ol>
+<li><a href="chapter-07.html#s-1" data-sec="s-1">열네 단계를 다시 따라가기</a></li>
+<li><a href="chapter-07.html#s-2" data-sec="s-2">네 개의 사례는 서로 다른 답을 냈는가</a></li>
+<li><a href="chapter-07.html#s-3" data-sec="s-3">선언과 기록</a></li>
+<li><a href="chapter-07.html#s-4" data-sec="s-4">정합적인 문장은 무엇의 증거인가</a></li>
+<li><a href="chapter-07.html#s-5" data-sec="s-5">설계된 공간과 학습된 공간 사이</a></li>
+<li><a href="chapter-07.html#s-6" data-sec="s-6">측정할 수 있는 질문으로 바꾸기</a></li>
+<li><a href="chapter-07.html#s-7" data-sec="s-7">고쳐 쓴 읽기 하나 — 종이 교과서</a></li>
+<li><a href="chapter-07.html#s-8" data-sec="s-8">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li class="toc-part" aria-hidden="true">3부 · 계산하는 개념공간으로 생각하기</li>
+<li><details class="toc-group"><summary><span class="toc-label">8장</span><span class="toc-title">접고 펼치는 조작과 매체</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-08.html">장 처음으로 →</a><ol>
+<li><a href="chapter-08.html#s-1" data-sec="s-1">투영과 단면</a></li>
+<li><a href="chapter-08.html#s-2" data-sec="s-2">축의 추가와 제거</a></li>
+<li><a href="chapter-08.html#s-3" data-sec="s-3">단위의 분해와 재종합</a></li>
+<li><a href="chapter-08.html#s-4" data-sec="s-4">시점의 이동</a></li>
+<li><a href="chapter-08.html#s-5" data-sec="s-5">시간의 펼침</a></li>
+<li><a href="chapter-08.html#s-6" data-sec="s-6">다섯 조작이 실패하는 곳</a></li>
+<li><a href="chapter-08.html#s-7" data-sec="s-7">공교육으로 돌아오기</a></li>
+<li><a href="chapter-08.html#s-8" data-sec="s-8">종이는 무엇을 접는가</a></li>
+<li><a href="chapter-08.html#s-9" data-sec="s-9">무엇을 비교해야 하는가</a></li>
+<li><a href="chapter-08.html#s-10" data-sec="s-10">정보를 같게 맞춘다는 것 — 사례 셋</a></li>
+<li><a href="chapter-08.html#s-11" data-sec="s-11">도식은 누구의 시선인가</a></li>
+<li><a href="chapter-08.html#s-12" data-sec="s-12">고차원을 정직하게 말하는 법</a></li>
+<li><a href="chapter-08.html#s-13" data-sec="s-13">비교를 위한 설계</a></li>
+<li><a href="chapter-08.html#s-14" data-sec="s-14">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">9장</span><span class="toc-title">계산되지 않는 것과 거리</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-09.html">장 처음으로 →</a><ol>
+<li><a href="chapter-09.html#s-1" data-sec="s-1">구경꾼에서 생존자로 — 유비의 무게</a></li>
+<li><a href="chapter-09.html#s-2" data-sec="s-2">언덕 위의 구경꾼</a></li>
+<li><a href="chapter-09.html#s-3" data-sec="s-3">어긋남의 네 가지 출처</a></li>
+<li><a href="chapter-09.html#s-4" data-sec="s-4">교실 창문 앞에서</a></li>
+<li><a href="chapter-09.html#s-5" data-sec="s-5">도구가 다시 대상이 될 때</a></li>
+<li><a href="chapter-09.html#s-6" data-sec="s-6">일곱 개의 자리</a></li>
+<li><a href="chapter-09.html#s-7" data-sec="s-7">손으로 돌리는 일은 계산을 바꾼다</a></li>
+<li><a href="chapter-09.html#s-8" data-sec="s-8">&#x27;외골격&#x27; 은유를 내려놓는 이유</a></li>
+<li><a href="chapter-09.html#s-9" data-sec="s-9">끊는 자리, 기록하는 자리</a></li>
+<li><a href="chapter-09.html#s-10" data-sec="s-10">책임은 어디에 남는가</a></li>
+<li><a href="chapter-09.html#s-11" data-sec="s-11">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">10장</span><span class="toc-title">교실 밖에서, 그리고 실행</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="chapter-10.html">장 처음으로 →</a><ol>
+<li><a href="chapter-10.html#s-1" data-sec="s-1">과학의 모형 — 상태공간은 공간이 아니다</a></li>
+<li><a href="chapter-10.html#s-2" data-sec="s-2">역사의 인식 — 묶는 규칙과 갈라지는 계통</a></li>
+<li><a href="chapter-10.html#s-3" data-sec="s-3">디자인과 건축 — 기하는 시험할 수 있다, 행동은 아니다</a></li>
+<li><a href="chapter-10.html#s-4" data-sec="s-4">인문사회 이론 — 관점의 배열로 남을 권리</a></li>
+<li><a href="chapter-10.html#s-5" data-sec="s-5">연구 글쓰기 — 근거 지도라는 개념공간</a></li>
+<li><a href="chapter-10.html#s-6" data-sec="s-6">계산이 판단을 대신하지 못하는 곳</a></li>
+<li><a href="chapter-10.html#s-7" data-sec="s-7">실행에는 층이 있다</a></li>
+<li><a href="chapter-10.html#s-8" data-sec="s-8">초고의 예를 다시 보기</a></li>
+<li><a href="chapter-10.html#s-9" data-sec="s-9">적용을 위한 실행의 조건</a></li>
+<li><a href="chapter-10.html#s-10" data-sec="s-10">이름에 대하여</a></li>
+<li><a href="chapter-10.html#s-11" data-sec="s-11">포스트언어라는 전망에 대하여</a></li>
+<li><a href="chapter-10.html#s-12" data-sec="s-12">이 장의 제안과 가정</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">결</span><span class="toc-title">계산하는 개념공간</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="conclusion.html">장 처음으로 →</a><ol>
+<li><a href="conclusion.html#s-1" data-sec="s-1">확인한 것</a></li>
+<li><a href="conclusion.html#s-2" data-sec="s-2">가정한 것</a></li>
+<li><a href="conclusion.html#s-3" data-sec="s-3">제안한 것</a></li>
+<li><a href="conclusion.html#s-4" data-sec="s-4">아직 하지 않은 것</a></li>
+<li><a href="conclusion.html#s-5" data-sec="s-5">새로운 사유의 단위라는 말에 대하여</a></li>
+<li><a href="conclusion.html#s-6" data-sec="s-6">접힌 문장으로 돌아가며</a></li>
+</ol></details></li>
+<li class="toc-part" aria-hidden="true">부록</li>
+<li><details class="toc-group"><summary><span class="toc-label">부록 1</span><span class="toc-title">사례 읽기 안내</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="appendix-1.html">장 처음으로 →</a><ol>
+<li><a href="appendix-1.html#s-1" data-sec="s-1">네트워크가 없을 때</a></li>
+</ol></details></li>
+<li><details class="toc-group"><summary><span class="toc-label">부록 2</span><span class="toc-title">공교육 실뜨기의 입력 기록</span><span class="toc-chevron" aria-hidden="true">+</span></summary><a class="toc-chapter-link" href="appendix-2.html">장 처음으로 →</a><ol>
+<li><a href="appendix-2.html#s-1" data-sec="s-1">관점을 하나씩 더한 열네 단계</a></li>
+<li><a href="appendix-2.html#s-2" data-sec="s-2">관점마다 따로 요청한 정의</a></li>
+<li><a href="appendix-2.html#s-3" data-sec="s-3">네 대상을 장치 자리에 넣은 분석</a></li>
+<li><a href="appendix-2.html#s-4" data-sec="s-4">이 기록에 없는 것</a></li>
+</ol></details></li>
+</ol></nav>
+</details></aside>
+<article class="chapter" id="chapter-05">
+<header class="chapter-head"><p class="eyebrow">2부 · 5장</p><h1>축이 계산될 때</h1></header>
+<p>4장에서 개념공간을 축들의 묶음과 그 값들 사이의 비교 구조를 함께 가진 구조로 정의했습니다. 개념 하나는 여러 축 위의 값으로 자리를 얻고, 비교 구조가 그 자리와 다른 개념들 사이의 가까움과 멂을 정합니다. 이 장은 이 책의 중심 질문으로 들어갑니다. <strong>그 축들이 계산의 대상이 된다면, 계산의 재료가 된다면, 변수로 들어가 공간 전체가 계산 가능해진다면</strong> 무엇이 달라지는가.</p>
+<p>세 질문은 1부의 세 그림과 맞물리지만, 순서대로 겹치지는 않습니다. 자료가 축을 내놓는 경우(1절)는 놓인 것들이 공간의 모양을 정한다는 점에서 2장의 <strong>관계하는 공간</strong>에 가깝습니다. 축을 정해 두고 그 위의 값을 재료로 쓰는 경우(2절)는 1장의 <strong>담는 공간</strong> 위의 계산입니다. 그리고 질문에 따라 축의 무게와 개념들의 자리가 매번 계산되는 경우(3절)가 3장의 <strong>계산하는 공간</strong>을 개념공간에 옮긴 그림입니다.</p>
+<h2 id="s-1">1. 축이 계산의 대상이 될 때</h2>
+<p>첫 번째 경우는 축 자체를 계산으로 찾는 경우입니다. 사람이 축을 정하지 않고, 자료가 축을 내놓게 합니다.</p>
+<p>가장 오래되고 단순한 예가 주성분 분석입니다. 이 책에 연결된 '고차원 데이터 — 13개 변수를 펼쳐 보기' 사례는 포도주 표본마다 측정한 열세 개의 성분값을 씁니다. 처음의 열세 축에는 모두 이름이 있습니다. 알코올, 사과산, 프롤린 같은 이름입니다. 주성분 분석은 이 축들을 회전시켜, 표본들이 가장 넓게 퍼지는 방향을 첫 번째 새 축으로, 그다음으로 넓게 퍼지는 방향을 두 번째 새 축으로 삼습니다. 새 축은 서로 직교하고, 원래 축들의 가중합입니다.</p>
+<p>여기서 세 가지 일이 함께 일어납니다. 첫째, <strong>압축</strong>입니다. 열세 개의 축 대신 두세 개의 새 축으로 표본들의 배치를 상당 부분 보여 줄 수 있습니다. 변수들의 단위를 맞춘 뒤 계산하면 두 축이 전체 분산의 약 55%를, 세 축이 약 67%를 담습니다. 둘째, <strong>이름의 상실</strong>입니다. 첫 번째 새 축은 '알코올'도 '프롤린'도 아니고 그것들을 얼마씩 섞은 방향입니다. 그 방향에 이름을 붙이려면 해석이 필요하고, 그 해석은 계산이 해 주지 않습니다. 셋째, <strong>계산 이전의 판단</strong>입니다. 변수들의 단위를 맞추지 않고 원래 단위로 계산하면, 첫 번째 새 축이 전체 분산의 99.8%를 담고, 그 축은 거의 수치가 큰 프롤린 하나의 방향이 됩니다. 무엇을 같은 크기로 볼지를 정하는 사람의 판단이 계산이 찾아낼 축을 미리 정합니다.</p>
+<p>학습된 단어 벡터는 이 과정을 다른 쪽으로 밀고 간 경우입니다. 사람은 축의 수만 정하고, 각 축이 무엇을 재는지는 정하지 않습니다. 문장들 속에서 낱말이 어떤 낱말들과 함께 나타나는지를 예측하도록 학습하는 동안 정해지는 것은 낱말들의 자리이고, 축 하나하나에는 특별한 뜻이 없습니다. 축을 돌려도 같은 배치를 나타낼 수 있기 때문입니다. 그래서 이 공간에서 뜻을 갖는 방향을 얻으려면, 주성분 분석처럼 자리들의 배치에서 방향을 다시 계산해야 합니다. '단어 벡터 — 의미의 배치와 투영의 손실' 사례에서 그 공간을 세 축으로 투영하면 전체 분산의 약 8%만 남고, 원래 공간에서 가까운 이웃이던 낱말들이 투영된 그림에서는 다른 이웃을 갖습니다. 축이 계산의 대상이 되면, 우리가 손에 쥐는 것은 이름 없는 방향들과, 그 방향들에 대한 우리의 해석입니다.</p>
+<figure class="ifig" id="fig-5-1"><figcaption class="ifig-bar"><span class="ifig-no">그림 5-1</span><span class="ifig-title">단어 벡터 — 의미의 배치와 투영의 손실</span></figcaption><div class="ifig-frame"><iframe id="fig-5-1-frame" src="https://climtc.github.io/teaching-learning-perspectives/models/word-vector-projections.html" title="그림 5-1 단어 벡터 — 의미의 배치와 투영의 손실 조작 모형" loading="lazy" allow="fullscreen" referrerpolicy="no-referrer" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"></iframe></div><div class="ifig-act"><button type="button" class="ifig-fs" data-target="fig-5-1-frame" data-fallback="https://climtc.github.io/teaching-learning-perspectives/models/word-vector-projections.html">전체 화면</button><a href="https://climtc.github.io/teaching-learning-perspectives/models/word-vector-projections.html" target="_blank" rel="noopener">모형 크게 열기<span class="sr-only"> (새 창)</span></a><a href="https://climtc.github.io/teaching-learning-perspectives/word-vector-projections.html" target="_blank" rel="noopener">해설과 출처 보기<span class="sr-only"> (새 창)</span></a></div><div class="ifig-cap"><p>200차원 시연용 벡터에서 단어 A와 B를 골라, 원래 공간에서의 거리와 두 축·세 축으로 투영한 그림에서의 이웃(고른 63개 낱말 안에서)을 견주어 보세요. 투영 축을 바꾸면 같은 낱말들이 다른 이웃을 얻습니다. 우리가 보는 '의미의 지도'는 학습된 공간의 작은 그림자입니다. 이 벡터는 낱말 의미 전체를 재현하지 않으며, 훈련 자료도 확인되지 않았습니다.</p><p class="ifig-url">조작 모형: https://climtc.github.io/teaching-learning-perspectives/models/word-vector-projections.html<br>해설과 출처: https://climtc.github.io/teaching-learning-perspectives/word-vector-projections.html</p></div></figure>
+<p>이것을 공교육 실뜨기의 열네 관점에 견주어 보면 차이가 분명해집니다. 그 축은 모두 이름에서 출발했습니다. Common, Logos, Apparatus. 이름이 먼저 있었고, 그 이름이 가리키는 방향이 무엇인지, 그 위에서 대상의 값은 무엇인지는 정해지지 않았습니다. 계산으로 찾은 축은 반대입니다. 방향과 값이 먼저 있고 이름이 없습니다. 개념공간을 계산 가능하게 만드는 일은 이 두 극단 사이 어딘가에서, 이름과 방향을 서로 맞추는 일입니다.</p>
+<h2 id="s-2">2. 축이 계산의 재료가 될 때</h2>
+<p>두 번째 경우는 축은 이미 정해져 있고, 축 위의 값이 계산의 재료로 쓰이는 경우입니다. 갈덴포스와 윌리엄스의 논문이 주로 다루는 것이 이 경우입니다.</p>
+<p>4장에서 소개한 갈덴포스와 윌리엄스의 논문은, 품질 차원들로 이루어진 공간에서 범주를 다루는 방법을 보여 줍니다. 개념(범주)마다 대표가 되는 원형의 자리를 정하면, 공간 안의 어떤 점이든 가장 가까운 원형의 범주에 속하도록 공간 전체를 나눌 수 있습니다. 이렇게 나눈 구역을 보로노이 분할이라고 부릅니다. 축 위의 값이 재료가 되어 '이것은 어느 범주에 속하는가'라는 판단이 계산됩니다. 이 논문에서 거리는 반드시 수치나 계량일 필요가 없고, 어느 쪽이 더 가까운지 순서만 매길 수 있으면 됩니다.<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
+<p>그런데 이 논문에는 이미 이 장의 셋째 질문이 들어 있습니다. 맥락에 따라 어떤 차원이 더 두드러지면, 저자들은 그 차원의 거리에 현저성을 반영하는 가중치를 곱합니다. 가중치가 바뀌면 원형 둘레의 구역 경계가 옮겨 가고, 어떤 대상은 다른 범주로 넘어갑니다. 저자들은 이것을 비단조 추론의 문제로 다룹니다. 새 맥락이 들어오면 앞서 내린 범주 판단이 철회될 수 있다는 뜻입니다. 그리고 같은 범주 안의 거리를 줄여 범주를 더 또렷하게 만드는 일(crisping)을 저자들은 '학습의 한 형태'라고 부릅니다. 이 일은 범주의 경계를 옮기지는 않고 유사성 판단의 크기만 바꿉니다. 축은 그대로 두고 축의 무게가 맥락에 따라 바뀌는 것, 이것이 축이 변수가 되는 가장 작은 형식입니다.</p>
+<p>이 책에 연결된 '개념공간 — 축과 관점의 선택' 사례는 이 경우의 다른 면을 보여 줍니다. 가상의 표본 여섯 개가 '공유', '수정', '근거 추적', '접근'이라는 네 속성에 대해 0에서 1 사이의 값을 가집니다. 독자는 네 축 가운데 두세 개를 골라 화면에 표시할 수 있고, 따로 네 속성의 중요도를 0에서 10 사이로 정해 표본들의 순위를 매길 수 있습니다. 해 보면 곧 알게 됩니다. <strong>어느 축을 보여 줄지 고르는 일과 각 축에 얼마나 무게를 줄지 정하는 일은 서로 다른 조작</strong>이고, 둘 다 결과를 바꿉니다. 앞의 것은 무엇이 보이는지를, 뒤의 것은 무엇이 더 나은지를 바꿉니다. 그리고 둘 다 계산이 아니라 사람의 선택입니다. 이 사례의 값은 가상이며, 네 속성이 서로 독립인지도, 각 속성을 제대로 재는지도 검증되지 않았습니다.</p>
+<figure class="ifig" id="fig-5-2"><figcaption class="ifig-bar"><span class="ifig-no">그림 5-2</span><span class="ifig-title">개념공간 — 축과 관점의 선택</span></figcaption><div class="ifig-frame"><iframe id="fig-5-2-frame" src="https://climtc.github.io/teaching-learning-perspectives/models/conceptual-lenses.html" title="그림 5-2 개념공간 — 축과 관점의 선택 조작 모형" loading="lazy" allow="fullscreen" referrerpolicy="no-referrer" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"></iframe></div><div class="ifig-act"><button type="button" class="ifig-fs" data-target="fig-5-2-frame" data-fallback="https://climtc.github.io/teaching-learning-perspectives/models/conceptual-lenses.html">전체 화면</button><a href="https://climtc.github.io/teaching-learning-perspectives/models/conceptual-lenses.html" target="_blank" rel="noopener">모형 크게 열기<span class="sr-only"> (새 창)</span></a><a href="https://climtc.github.io/teaching-learning-perspectives/conceptual-lenses.html" target="_blank" rel="noopener">해설과 출처 보기<span class="sr-only"> (새 창)</span></a></div><div class="ifig-cap"><p>두 축만 보이게 하면 가상 표본 A와 B가 겹칩니다. 근거 추적을 셋째 축으로 더해 둘이 떨어지는지 보고, 이어서 근거 추적만 중요하게 둔 경우와 접근만 중요하게 둔 경우의 순위를 견주어 보세요. 순위가 뒤집혀도 표본의 값은 바뀌지 않았다는 것을 함께 확인할 수 있습니다. 값은 가상입니다.</p><p class="ifig-url">조작 모형: https://climtc.github.io/teaching-learning-perspectives/models/conceptual-lenses.html<br>해설과 출처: https://climtc.github.io/teaching-learning-perspectives/conceptual-lenses.html</p></div></figure>
+<p>예를 하나 만들어 보겠습니다. 아래의 수치는 설명을 위해 지어낸 것이며 어떤 실제 학교나 장치를 잰 것이 아닙니다. 공교육 실뜨기의 네 장치를 세 개의 축 위에 놓는다고 해 봅시다. 다만 이번에는 공교육 실뜨기처럼 이론적 관점을 축으로 쓰지 않고, 4장의 조건을 갖출 수 있는 축, 곧 값을 정하는 절차를 상상할 수 있는 축을 고릅니다.</p>
+<div class="table-wrap" tabindex="0"><table><thead><tr><th scope="col">장치</th><th scope="col">표준화의 정도 (전국에서 같은 정도)</th><th scope="col">공개성 (바깥에서 내용과 과정을 볼 수 있는 정도)</th><th scope="col">학습자의 선택 여지</th></tr></thead><tbody><tr><td>종이 교과서</td><td>0.8</td><td>0.7</td><td>0.2</td></tr><tr><td>교실 출입문의 작은 창문</td><td>0.9</td><td>0.4</td><td>0.0</td></tr><tr><td>국가 수준 교육과정</td><td>0.9</td><td>0.8</td><td>0.3</td></tr><tr><td>교실</td><td>0.7</td><td>0.3</td><td>0.3</td></tr></tbody></table></div>
+<p><em>(가상의 값. 축의 정의와 측정 절차가 없으면 이 표는 아무것도 말해 주지 않는다.)</em></p>
+<p>이 표가 있으면 계산할 수 있는 것이 생깁니다. 두 장치 사이의 거리를 잴 수 있고, 어떤 장치들이 비슷한지 묶을 수 있으며, 축에 무게를 주어 순위를 매길 수 있습니다. 동시에 이 표를 만드는 순간 공교육 실뜨기의 질문 대부분이 사라집니다. 교실 창문에 '학습자의 선택 여지 0'이라는 값을 매기는 일은, 창문이 학생에게 무엇이었는지를 묻던 생존자의 관점이 표에 들어갈 자리가 없다는 것을 뜻합니다. 축이 재료가 되면, 재료가 되지 못한 것은 계산에서 빠집니다. 이 빠짐을 기록하는 것이 이 책이 말하는 계산하는 개념공간의 첫 번째 책임입니다.</p>
+<h2 id="s-3">3. 축이 변수가 될 때 — 계산하는 개념공간</h2>
+<p>세 번째 경우가 이 책의 이름에 해당합니다. 축이 정해진 그릇도, 고정된 재료도 아니고, <strong>변수</strong>가 되는 경우입니다. 축의 무게와 개념의 자리가 미리 정해져 있지 않고, 지금 던진 질문과 함께 놓인 다른 개념들에 따라 매번 계산되는 공간입니다.</p>
+<p>3장에서 본 트랜스포머는 이 그림의 절반을 보여 줍니다. 좌표 공간의 축은 고정된 채로, 함께 놓인 것들과의 계산된 관계에 따라 각 단위의 자리가 다시 정해집니다. 트랜스포머 안에서 한 토큰은 입력 단계에서 하나의 벡터로 시작하지만, 함께 놓인 토큰들(언어모델에서는 앞선 토큰들)의 정보를 학습된 적합도에 따라 섞으며 층마다 고쳐 쓰입니다. 그래서 같은 낱말도 놓인 문장에 따라 서로 다른 벡터 값을 가질 수 있습니다. 어떤 다른 토큰을 얼마나 참조할지(어텐션의 몫)도 미리 정해진 것이 아니라 그 순간의 표현들로부터 계산됩니다. 그러나 좌표 공간 자체와 학습된 규칙은 그대로이고(<a class="xref" href="chapter-03.html#s-1">3장 1절</a>), 어텐션의 몫은 단위와 단위 사이의 양이지 축마다 주는 무게가 아닙니다. 축의 무게가 계산된다는 나머지 절반은 앞 절의 현저성 가중에서 가져와야 합니다.</p>
+<p>이 그림을 개념공간에 옮기면 다음과 같은 <strong>사고 모형</strong>이 됩니다. 이것은 구현된 시스템이 아니라, '계산하는 개념공간'이 무엇일 수 있는지를 분명히 하기 위한 그림입니다.</p>
+<blockquote><p><strong>계산하는 개념공간의 사고 모형</strong> 1. 개념 단위들이 있다. 공교육 실뜨기의 예로 말하면 '종이 교과서', '교실 창문', '국가 수준 교육과정', '교실' 같은 장치들, 그리고 '체계', '공중' 같은 관점들이다('생존자' 관점은 <a class="xref" href="chapter-04.html#s-5">4장 5절</a>의 이유로 이 단위에 넣지 않고, 모형 바깥의 표시로 남긴다). 각 단위는 처음에 이름 붙은 축 위의 값들로 이루어진 벡터를 가진다. 2. 질문이 주어진다. 예를 들어 '누가 이 장치에서 배제되는가'. 2′. 질문에 비추어 축마다 무게가 계산된다(갈덴포스의 현저성에 해당). 단위 사이의 적합도와는 다른 양이다. 3. 무게가 반영된 값들로 단위들 사이의 적합도가 계산된다. 이 질문에서 '종이 교과서'를 이해하려면 다른 단위들 가운데 무엇을 얼마나 참조해야 하는가. 4. 각 단위의 벡터가 참조한 단위들의 정보를 그 적합도만큼 섞어 갱신된다. '종이 교과서'의 자리가 이 질문 아래에서 옮겨 간다. 5. 3과 4가 여러 번 되풀이된다. 갱신된 자리에서 다시 적합도가 계산된다. 6. 출력은 세 가지다. 질문에 따라 옮겨 간 개념들의 자리, 그 질문 아래에서 계산된 축의 무게, 그리고 그 과정에서 계산된 적합도의 기록.</p></blockquote>
+<p>이 모형에서 질문마다 계산되는 것은 두 가지입니다. 하나는 개념 단위들 사이의 적합도와 그에 따라 옮겨 간 자리이고, 다른 하나는 2′단계에서 계산되는 축의 무게입니다. 트랜스포머의 어텐션이 직접 계산하는 것은 앞의 것뿐입니다. 이 책이 '축이 변수가 된다'고 할 때 가리키는 것은 뒤의 것까지 계산에 들어오는 경우입니다. 같은 '종이 교과서'가 '누가 배제되는가'라는 질문 아래에서와 '이 장치는 어떻게 바뀌어 왔는가'라는 질문 아래에서 서로 다른 축에 무게가 실리고, 그래서 서로 다른 자리에 놓입니다. 공교육 실뜨기가 문장으로 말했던 것, 곧 관점을 하나 더할 때마다 앞의 해석이 다시 짜인다는 것을, 이 모형은 계산으로 다시 쓸 수 있습니다.</p>
+<p>그러나 이 모형을 쓰는 순간 세 가지 문제가 바로 생깁니다.</p>
+<p>첫째, <strong>적합도를 계산하는 규칙은 어디에서 오는가.</strong> 트랜스포머에서 그 규칙은 엄청난 양의 문장을 예측하도록 학습된 매개변수입니다. 계산하는 개념공간에서 그 규칙을 사람이 설계하면 결과는 설계자의 가정을 되비출 뿐이고, 자료로 학습시키면 1절에서 본 것처럼 축의 이름이 흐려집니다. 이름 붙은 축과 학습된 규칙을 함께 갖는 일은 그 자체로 연구 과제입니다.</p>
+<p>둘째, <strong>계산된 적합도는 설명이 아니다.</strong> 트랜스포머의 어텐션 몫이 그 층에서 정보가 어떻게 섞였는지를 보여 줄 뿐 출력이 왜 그렇게 나왔는지를 그것만으로 설명하지 못하듯, 이 모형의 적합도 기록도 개념들이 실제로 그만큼 관련 있다는 증거가 아닙니다. 그것은 규칙이 그렇게 계산했다는 기록입니다.</p>
+<p>셋째, <strong>계산되지 않는 것이 여전히 있다.</strong> 2절에서 본 것처럼, 축이 될 수 없는 관점은 이 모형 안에서도 변수가 되지 못합니다. 생존자의 관점은 '배제된 자들의 벡터'로 들어갈 수 없습니다. 그들은 처음부터 자료에 없기 때문입니다. 계산하는 개념공간이 넓어질수록 그 바깥을 표시하는 일이 더 중요해지는 이유입니다. 9장에서 이 문제로 돌아옵니다.</p>
+<h2 id="s-4">4. 세 경우를 나란히 놓으면</h2>
+<div class="table-wrap" tabindex="0"><table><thead><tr><th scope="col"></th><th scope="col">축이 계산의 대상</th><th scope="col">축이 계산의 재료</th><th scope="col">축이 변수(계산하는 개념공간)</th></tr></thead><tbody><tr><td>무엇이 정해져 있나</td><td>자료(대상들의 측정값)</td><td>축과 그 위의 값</td><td>개념 단위와 갱신 규칙</td></tr><tr><td>무엇이 계산되나</td><td>축의 방향(주성분 분석의 회전), 또는 낱말의 자리(학습)</td><td>거리, 범주, 순위</td><td>질문에 따른 축의 무게, 개념의 자리, 적합도</td></tr><tr><td>공간의 그림</td><td>자료가 공간의 모양을 정한다(관계하는 공간에 가까움)</td><td>담는 공간 위의 계산</td><td>계산하는 공간을 개념공간에 옮긴 것</td></tr><tr><td>얻는 것</td><td>압축, 숨은 구조의 발견</td><td>비교, 분류, 판단의 반복 가능성</td><td>맥락에 따라 달라지는 의미, 관계의 기록</td></tr><tr><td>잃는 것</td><td>축의 이름, 척도 선택에 대한 의존</td><td>재료가 되지 못한 것, 측정 타당성</td><td>규칙의 출처, 설명 가능성, 바깥의 표시</td></tr><tr><td>대표 사례</td><td>'고차원 데이터' 사례, '단어 벡터' 사례</td><td>'개념공간 — 축과 관점의 선택' 사례, 갈덴포스의 원형과 구역</td><td>갈덴포스의 현저성 가중(가장 작은 형식), 트랜스포머(자리 쪽 절반, 3장), 사고 모형(3절)</td></tr></tbody></table></div>
+<p>세 경우는 사다리가 아닙니다. 셋째가 첫째보다 나은 것이 아니라, 질문이 무엇이냐에 따라 맞는 경우가 다릅니다. 장치들을 비교하고 싶다면 둘째로 충분할 수 있고, 무엇이 숨은 구조인지 알고 싶다면 첫째가 맞으며, 같은 개념이 질문에 따라 어떻게 다른 뜻을 갖는지를 보고 싶을 때 셋째가 필요합니다.</p>
+<h2 id="s-5">5. '기하학적 틀'은 고정된 무대인가</h2>
+<p>2025년 초고에서 제 문체로 쓴 대목 가운데 이 장과 직접 이어지는 생각이 있습니다. 초고는 계산하는 개념공간을 "기하학적 틀"이라고 부르고, 인공지능과 함께하는 분석을 그 틀 위에서 실행되는 "대수학적 과정"이라고 불렀습니다. 강력한 연산은 그것이 펼쳐질 안정적인 공간을 필요로 하며, 개념공간이 그 안정적인 무대를 제공한다는 것이었습니다.</p>
+<p>이 생각은 정확한 직관을 담고 있으면서, 동시에 이 책의 다른 쪽 질문을 아직 만나지 못했다고 생각합니다. 연산이 펼쳐질 안정적인 무대라는 그림은 1장의 <strong>담는 공간</strong>입니다. 무대는 먼저 주어져 있고, 무대 위의 연산은 무대를 바꾸지 않습니다. 그런데 3장의 트랜스포머에서는 좌표 공간은 그대로이지만, 그 위의 배치와 관계가 연산의 결과로 매 층 다시 정해집니다. 3장에서 말한 뜻, 곧 함께 놓인 것들 사이의 관계의 배치라는 뜻의 '공간'은 매번 계산됩니다. 2025년의 저는 언어모델을 계산하는 공간으로 쓰면서도, 개념공간은 여전히 담는 공간으로 생각하고 있었던 셈입니다.</p>
+<p>그렇다면 배치가 매번 계산되는 공간에서 '안정'은 어디에서 오는가. 이 장의 답은 이렇습니다. 안정은 무대의 고정에서 오지 않고, <strong>기록</strong>에서 옵니다. 어떤 질문 아래에서 어떤 규칙으로 무엇이 계산되었는지, 그 결과 개념들이 어디로 옮겨 갔는지를 남겨 두면, 공간은 매번 달라져도 그 달라짐을 비교할 수 있습니다. 9장에서 이 생각을 비판적 거리의 문제로 다시 다룹니다.</p>
+<h2 id="s-6">6. 이 장의 제안과 가정</h2>
+<ul><li><strong>제안한 것</strong>: 축이 계산의 대상·재료·변수가 되는 세 경우의 구별과 그 대응표, 트랜스포머가 그 셋째 경우의 절반(자리)만 보여 준다는 읽기, 축의 무게를 계산하는 단계를 더한 계산하는 개념공간의 사고 모형, 안정은 무대의 고정이 아니라 기록에서 온다는 해석.</li><li><strong>가정한 것</strong>: 2절의 장치별 수치는 지어낸 값이다. 3절의 사고 모형은 구현하지 않았다.</li></ul>
+<section class="notes" aria-label="주"><h2 class="notes-title">주</h2><ol>
+<li id="fn-1" value="1">Gärdenfors, P., &amp; Williams, M.-A. (2001). Reasoning about categories in conceptual spaces. <em>Proceedings of IJCAI 2001</em>. 원형과 보로노이 분할, 자연스러운 속성과 볼록 영역. <a class="fnback" href="#ref-1" aria-label="본문으로 돌아가기">↩</a></li>
+</ol></section>
+<nav class="chapter-nav" aria-label="이전·다음 장"><a class="prev" href="chapter-04.html"><span>← 이전</span>4장. 축이 의미를 정하는 공간</a><a class="next" href="chapter-06.html"><span>다음 →</span>6장. 공교육이라는 낱말의 여러 겹 — 공교육 실뜨기</a></nav>
+</article>
+</div>
+</main>
+<footer class="site-footer"><div class="shell">
+<p class="cowork">이 원고와 이 원고에 연결된 상호작용 사례들은 제가 코덱스(Codex), 클로드(Claude)와 함께 작업한 결과물입니다.</p>
+<p>계산하는 공간 : 개념편 · 공개판 0.9 · 2026년 10월 11일 · 집필 중인 원고 · © 임완철</p>
+<p><a href="https://climtc.github.io/">연구 기록으로 돌아가기</a> · <a href="https://github.com/climtc/computing-space-concepts">GitHub 저장소 <span aria-hidden="true">↗</span></a></p>
+</div></footer>
+</body>
+</html>
